@@ -10,10 +10,23 @@
 		CF1038EB2A99EF3A004E4A91 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1038EA2A99EF3A004E4A91 /* AppDelegate.swift */; };
 		CF1038ED2A99EF3A004E4A91 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1038EC2A99EF3A004E4A91 /* SceneDelegate.swift */; };
 		CF1038EF2A99EF3A004E4A91 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1038EE2A99EF3A004E4A91 /* ViewController.swift */; };
-		CF1038F22A99EF3A004E4A91 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF1038F02A99EF3A004E4A91 /* Main.storyboard */; };
 		CF1038F52A99EF3A004E4A91 /* Zeus.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CF1038F32A99EF3A004E4A91 /* Zeus.xcdatamodeld */; };
 		CF1038F72A99EF3C004E4A91 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF1038F62A99EF3C004E4A91 /* Assets.xcassets */; };
 		CF1038FA2A99EF3C004E4A91 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF1038F82A99EF3C004E4A91 /* LaunchScreen.storyboard */; };
+		CF1039032A99F0BC004E4A91 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = CF1039022A99F0BC004E4A91 /* SnapKit */; };
+		CF1039052A99F0BC004E4A91 /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = CF1039042A99F0BC004E4A91 /* SnapKit-Dynamic */; };
+		CF1039082A99FAEC004E4A91 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = CF1039072A99FAEC004E4A91 /* Lottie */; };
+		CF1039182A99FE92004E4A91 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1039172A99FE91004E4A91 /* Environment.swift */; };
+		CF10391A2A99FEA8004E4A91 /* Typealiases.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1039192A99FEA8004E4A91 /* Typealiases.swift */; };
+		CF10391C2A99FEDA004E4A91 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF10391B2A99FEDA004E4A91 /* Network.swift */; };
+		CF10391E2A99FEE0004E4A91 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF10391D2A99FEE0004E4A91 /* Networking.swift */; };
+		CF1039202A99FEE9004E4A91 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF10391F2A99FEE9004E4A91 /* NetworkError.swift */; };
+		CF1039222A99FEF8004E4A91 /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1039212A99FEF8004E4A91 /* NetworkRequest.swift */; };
+		CF1039242A99FF00004E4A91 /* NetworkStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1039232A99FF00004E4A91 /* NetworkStatus.swift */; };
+		CF1039262A99FF0B004E4A91 /* RequestBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1039252A99FF0B004E4A91 /* RequestBody.swift */; };
+		CF1039282A99FF11004E4A91 /* RequestMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1039272A99FF11004E4A91 /* RequestMethod.swift */; };
+		CF10392B2A9A0192004E4A91 /* Network+Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF10392A2A9A0192004E4A91 /* Network+Logger.swift */; };
+		CF10392D2A9A02EF004E4A91 /* Data+PrettyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF10392C2A9A02EF004E4A91 /* Data+PrettyJSON.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,11 +34,22 @@
 		CF1038EA2A99EF3A004E4A91 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CF1038EC2A99EF3A004E4A91 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		CF1038EE2A99EF3A004E4A91 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		CF1038F12A99EF3A004E4A91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CF1038F42A99EF3A004E4A91 /* Zeus.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Zeus.xcdatamodel; sourceTree = "<group>"; };
 		CF1038F62A99EF3C004E4A91 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CF1038F92A99EF3C004E4A91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CF1038FB2A99EF3C004E4A91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF1039172A99FE91004E4A91 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		CF1039192A99FEA8004E4A91 /* Typealiases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Typealiases.swift; sourceTree = "<group>"; };
+		CF10391B2A99FEDA004E4A91 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		CF10391D2A99FEE0004E4A91 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		CF10391F2A99FEE9004E4A91 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		CF1039212A99FEF8004E4A91 /* NetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
+		CF1039232A99FF00004E4A91 /* NetworkStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkStatus.swift; sourceTree = "<group>"; };
+		CF1039252A99FF0B004E4A91 /* RequestBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestBody.swift; sourceTree = "<group>"; };
+		CF1039272A99FF11004E4A91 /* RequestMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestMethod.swift; sourceTree = "<group>"; };
+		CF1039292A99FF3E004E4A91 /* OWConfig.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = OWConfig.xcconfig; sourceTree = "<group>"; };
+		CF10392A2A9A0192004E4A91 /* Network+Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Network+Logger.swift"; sourceTree = "<group>"; };
+		CF10392C2A9A02EF004E4A91 /* Data+PrettyJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+PrettyJSON.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +57,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF1039032A99F0BC004E4A91 /* SnapKit in Frameworks */,
+				CF1039052A99F0BC004E4A91 /* SnapKit-Dynamic in Frameworks */,
+				CF1039082A99FAEC004E4A91 /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,16 +85,139 @@
 		CF1038E92A99EF3A004E4A91 /* Zeus */ = {
 			isa = PBXGroup;
 			children = (
-				CF1038EA2A99EF3A004E4A91 /* AppDelegate.swift */,
-				CF1038EC2A99EF3A004E4A91 /* SceneDelegate.swift */,
-				CF1038EE2A99EF3A004E4A91 /* ViewController.swift */,
-				CF1038F02A99EF3A004E4A91 /* Main.storyboard */,
-				CF1038F62A99EF3C004E4A91 /* Assets.xcassets */,
-				CF1038F82A99EF3C004E4A91 /* LaunchScreen.storyboard */,
+				CF1039132A99FDC9004E4A91 /* Domain */,
+				CF1039122A99FDBC004E4A91 /* Network */,
+				CF1039112A99FD9A004E4A91 /* Design */,
+				CF1039102A99FD79004E4A91 /* Core */,
+				CF10390B2A99FC84004E4A91 /* Features */,
+				CF1039092A99FB8F004E4A91 /* Supporting Files */,
+				CF10390A2A99FC44004E4A91 /* Resources */,
 				CF1038FB2A99EF3C004E4A91 /* Info.plist */,
+				CF1039292A99FF3E004E4A91 /* OWConfig.xcconfig */,
 				CF1038F32A99EF3A004E4A91 /* Zeus.xcdatamodeld */,
 			);
 			path = Zeus;
+			sourceTree = "<group>";
+		};
+		CF1039092A99FB8F004E4A91 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CF1038EA2A99EF3A004E4A91 /* AppDelegate.swift */,
+				CF1038EC2A99EF3A004E4A91 /* SceneDelegate.swift */,
+				CF1038F82A99EF3C004E4A91 /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CF10390A2A99FC44004E4A91 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CF1038F62A99EF3C004E4A91 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		CF10390B2A99FC84004E4A91 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				CF10390C2A99FCC3004E4A91 /* Forecast */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		CF10390C2A99FCC3004E4A91 /* Forecast */ = {
+			isa = PBXGroup;
+			children = (
+				CF10390F2A99FCF9004E4A91 /* Presenter */,
+				CF10390E2A99FCF1004E4A91 /* Model */,
+				CF10390D2A99FCEA004E4A91 /* View */,
+			);
+			path = Forecast;
+			sourceTree = "<group>";
+		};
+		CF10390D2A99FCEA004E4A91 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CF1038EE2A99EF3A004E4A91 /* ViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CF10390E2A99FCF1004E4A91 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CF10390F2A99FCF9004E4A91 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		CF1039102A99FD79004E4A91 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				CF1039162A99FDF0004E4A91 /* Navigation */,
+				CF1039152A99FDE1004E4A91 /* Utils */,
+				CF1039142A99FDD9004E4A91 /* DI */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		CF1039112A99FD9A004E4A91 /* Design */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Design;
+			sourceTree = "<group>";
+		};
+		CF1039122A99FDBC004E4A91 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				CF10391B2A99FEDA004E4A91 /* Network.swift */,
+				CF10392A2A9A0192004E4A91 /* Network+Logger.swift */,
+				CF10391D2A99FEE0004E4A91 /* Networking.swift */,
+				CF10391F2A99FEE9004E4A91 /* NetworkError.swift */,
+				CF1039212A99FEF8004E4A91 /* NetworkRequest.swift */,
+				CF1039232A99FF00004E4A91 /* NetworkStatus.swift */,
+				CF1039252A99FF0B004E4A91 /* RequestBody.swift */,
+				CF1039272A99FF11004E4A91 /* RequestMethod.swift */,
+				CF10392C2A9A02EF004E4A91 /* Data+PrettyJSON.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		CF1039132A99FDC9004E4A91 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		CF1039142A99FDD9004E4A91 /* DI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
+		CF1039152A99FDE1004E4A91 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				CF1039172A99FE91004E4A91 /* Environment.swift */,
+				CF1039192A99FEA8004E4A91 /* Typealiases.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		CF1039162A99FDF0004E4A91 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Navigation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -86,6 +236,11 @@
 			dependencies = (
 			);
 			name = Zeus;
+			packageProductDependencies = (
+				CF1039022A99F0BC004E4A91 /* SnapKit */,
+				CF1039042A99F0BC004E4A91 /* SnapKit-Dynamic */,
+				CF1039072A99FAEC004E4A91 /* Lottie */,
+			);
 			productName = Zeus;
 			productReference = CF1038E72A99EF3A004E4A91 /* Zeus.app */;
 			productType = "com.apple.product-type.application";
@@ -114,6 +269,10 @@
 				Base,
 			);
 			mainGroup = CF1038DE2A99EF3A004E4A91;
+			packageReferences = (
+				CF1039012A99F0BC004E4A91 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				CF1039062A99FAEC004E4A91 /* XCRemoteSwiftPackageReference "lottie-spm" */,
+			);
 			productRefGroup = CF1038E82A99EF3A004E4A91 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -130,7 +289,6 @@
 			files = (
 				CF1038FA2A99EF3C004E4A91 /* LaunchScreen.storyboard in Resources */,
 				CF1038F72A99EF3C004E4A91 /* Assets.xcassets in Resources */,
-				CF1038F22A99EF3A004E4A91 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,24 +299,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF10392D2A9A02EF004E4A91 /* Data+PrettyJSON.swift in Sources */,
+				CF1039282A99FF11004E4A91 /* RequestMethod.swift in Sources */,
 				CF1038F52A99EF3A004E4A91 /* Zeus.xcdatamodeld in Sources */,
 				CF1038EF2A99EF3A004E4A91 /* ViewController.swift in Sources */,
+				CF10391A2A99FEA8004E4A91 /* Typealiases.swift in Sources */,
+				CF10391E2A99FEE0004E4A91 /* Networking.swift in Sources */,
+				CF1039242A99FF00004E4A91 /* NetworkStatus.swift in Sources */,
+				CF1039222A99FEF8004E4A91 /* NetworkRequest.swift in Sources */,
 				CF1038EB2A99EF3A004E4A91 /* AppDelegate.swift in Sources */,
+				CF10392B2A9A0192004E4A91 /* Network+Logger.swift in Sources */,
 				CF1038ED2A99EF3A004E4A91 /* SceneDelegate.swift in Sources */,
+				CF1039202A99FEE9004E4A91 /* NetworkError.swift in Sources */,
+				CF10391C2A99FEDA004E4A91 /* Network.swift in Sources */,
+				CF1039182A99FE92004E4A91 /* Environment.swift in Sources */,
+				CF1039262A99FF0B004E4A91 /* RequestBody.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		CF1038F02A99EF3A004E4A91 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CF1038F12A99EF3A004E4A91 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		CF1038F82A99EF3C004E4A91 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -296,7 +457,6 @@
 				INFOPLIST_FILE = Zeus/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -324,7 +484,6 @@
 				INFOPLIST_FILE = Zeus/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -362,6 +521,43 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CF1039012A99F0BC004E4A91 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		CF1039062A99FAEC004E4A91 /* XCRemoteSwiftPackageReference "lottie-spm" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-spm.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CF1039022A99F0BC004E4A91 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CF1039012A99F0BC004E4A91 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		CF1039042A99F0BC004E4A91 /* SnapKit-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CF1039012A99F0BC004E4A91 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = "SnapKit-Dynamic";
+		};
+		CF1039072A99FAEC004E4A91 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CF1039062A99FAEC004E4A91 /* XCRemoteSwiftPackageReference "lottie-spm" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		CF1038F32A99EF3A004E4A91 /* Zeus.xcdatamodeld */ = {
