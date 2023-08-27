@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Lottie
 
 final class ForecastView: BaseView {
     // MARK: - Outlets
@@ -18,6 +19,13 @@ final class ForecastView: BaseView {
     private let secondDayView = DailyForecastView()
     private let thirdDayView = DailyForecastView()
     
+    private(set) lazy var animationView: LottieAnimationView = {
+        let view = LottieAnimationView()
+        view.contentMode(.scaleAspectFit)
+        view.loopMode = .loop
+        return view
+    }()
+    
     // MARK: - Lifecycle
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -28,6 +36,7 @@ final class ForecastView: BaseView {
 // MARK: - Configuration
 extension ForecastView {
     struct Configuration {
+        let animation: String
         let currentCity: String
         let currentDate: String
         let currentTemp: String
@@ -37,6 +46,9 @@ extension ForecastView {
         let thirdDay: DailyForecastView.Configuration
     }
     public func configure(with config: Configuration) {
+        animationView.pause()
+        animationView.animation = .named(config.animation)
+        animationView.play()
         todayLabel.attributedText = makeAttributedText(from: config.currentCity, date: config.currentDate)
         tempLabel.text = config.currentTemp
         
@@ -49,7 +61,13 @@ extension ForecastView {
 // MARK: - Private methods
 extension ForecastView {
     private func _init() {
-        addSubviews(todayLabel, tempLabel)
+        addSubviews(animationView, todayLabel, tempLabel)
+        
+        animationView.snp.makeConstraints { make in
+            make.center.equalToSuperview()
+            make.height.equalTo(375)
+            make.width.equalToSuperview().inset(16)
+        }
         
         todayLabel.snp.makeConstraints { make in
             make.centerX.equalToSuperview()
@@ -75,6 +93,8 @@ extension ForecastView {
             make.top.greaterThanOrEqualTo(tempLabel.snp.bottom).inset(30)
             make.bottom.equalTo(self.safeAreaLayoutGuide).inset(30)
         }
+
+
     }
     
     private func makeAttributedText(from city: String, date: String) -> NSMutableAttributedString {

@@ -15,7 +15,6 @@ final class ForecastViewController: BaseViewController<ForecastView> {
         super.viewDidLoad()
         view.backgroundColor = .white
         configureView()
-        
 //        Task {
 //            do {
 //                let r = try await repo.get()
@@ -34,6 +33,7 @@ extension ForecastViewController {
     private func configureView() {
         customView.configure(with:
                 .init(
+                    animation: "animation1",
                     currentCity: "BERLIN",
                     currentDate: "MON, 11AM",
                     currentTemp: "27",
