@@ -39,7 +39,6 @@ open class BaseViewController<View: UIView>: UIViewController {
     
     open override func viewDidLoad() {
         super.viewDidLoad()
-
     }
     
     open override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {

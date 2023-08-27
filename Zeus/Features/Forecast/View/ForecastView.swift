@@ -15,10 +15,9 @@ final class ForecastView: BaseView {
         .textAlignment(.center)
     private lazy var tempLabel = UILabel()
         .font(.monospacedSystemFont(ofSize: 250, weight: .bold))
-    private let firstDayView = DailyForecastView()
-    private let secondDayView = DailyForecastView()
-    private let thirdDayView = DailyForecastView()
-    
+    private lazy var stackView = UIStackView()
+        .axis(.vertical)
+        .spacing(10)
     private(set) lazy var animationView: LottieAnimationView = {
         let view = LottieAnimationView()
         view.contentMode(.scaleAspectFit)
@@ -35,26 +34,17 @@ final class ForecastView: BaseView {
 
 // MARK: - Configuration
 extension ForecastView {
-    struct Configuration {
-        let animation: String
-        let currentCity: String
-        let currentDate: String
-        let currentTemp: String
-        
-        let firstDay: DailyForecastView.Configuration
-        let secondDay: DailyForecastView.Configuration
-        let thirdDay: DailyForecastView.Configuration
-    }
-    public func configure(with config: Configuration) {
+    public func configure(with content: Weather) {
         animationView.pause()
-        animationView.animation = .named(config.animation)
+        animationView.animation = .named(content.animation)
         animationView.play()
-        todayLabel.attributedText = makeAttributedText(from: config.currentCity, date: config.currentDate)
-        tempLabel.text = config.currentTemp
+        todayLabel.attributedText = makeAttributedText(from: content.city, date: content.date)
+        tempLabel.text = "\(Int(content.temp))"
         
-        firstDayView.configure(with: config.firstDay)
-        secondDayView.configure(with: config.secondDay)
-        thirdDayView.configure(with: config.thirdDay)
+        stackView.arrangedSubviews.forEach { stackView.removeArrangedSubview($0) }
+        content.forecast.forEach { content in
+            stackView.addArrangedSubview(DayForecastView(content: content))
+        }
     }
 }
 
@@ -79,28 +69,21 @@ extension ForecastView {
             make.center.equalToSuperview()
         }
         
-        let stack = UIStackView(arrangedSubviews: [
-            firstDayView,
-            secondDayView,
-            thirdDayView
-        ])
-            .axis(.vertical)
-            .spacing(10)
-        
-        addSubview(stack)
-        stack.snp.makeConstraints { make in
+        addSubview(stackView)
+        stackView.snp.makeConstraints { make in
             make.centerX.equalToSuperview()
             make.top.greaterThanOrEqualTo(tempLabel.snp.bottom).inset(30)
             make.bottom.equalTo(self.safeAreaLayoutGuide).inset(30)
         }
-
-
     }
     
-    private func makeAttributedText(from city: String, date: String) -> NSMutableAttributedString {
-        let cityAttrString = NSAttributedString(string: city, attributes: [.foregroundColor: UIColor.darkGray])
+    private func makeAttributedText(from city: String, date: Date) -> NSMutableAttributedString {
+        let cityAttrString = NSAttributedString(string: city.uppercased(),
+                                                attributes: [.foregroundColor: UIColor.darkGray])
         let finalString = NSMutableAttributedString(attributedString: cityAttrString)
-        let dateAttrString = NSAttributedString(string: "\n\(date)", attributes: [.foregroundColor: UIColor.gray])
+        
+        let dateAttrString = NSAttributedString(string: "\n\(date.toWeekdayAndTime)",
+                                                attributes: [.foregroundColor: UIColor.gray])
         finalString.append(dateAttrString)
         return finalString
     }

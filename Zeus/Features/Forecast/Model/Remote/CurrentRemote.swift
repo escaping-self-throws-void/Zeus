@@ -13,6 +13,7 @@ struct CurrentRemote: Codable {
     let condition: ConditionRemote
     let windMph: Double
     let windKph: Double
+    let isDay: Int
     
     enum CodingKeys: String, CodingKey {
         case tempC = "temp_c"
@@ -20,5 +21,6 @@ struct CurrentRemote: Codable {
         case condition
         case windMph = "wind_mph"
         case windKph = "wind_kph"
+        case isDay = "is_day"
     }
 }
