@@ -81,6 +81,8 @@
 		CF85A06B2A9BD36B00D9D73B /* night_rain.json in Resources */ = {isa = PBXBuildFile; fileRef = CF85A0592A9BD36B00D9D73B /* night_rain.json */; };
 		CF85A06C2A9BD36B00D9D73B /* day_thunderstorm.json in Resources */ = {isa = PBXBuildFile; fileRef = CF85A05A2A9BD36B00D9D73B /* day_thunderstorm.json */; };
 		CF85A06D2A9BD36B00D9D73B /* day_rain.json in Resources */ = {isa = PBXBuildFile; fileRef = CF85A05B2A9BD36B00D9D73B /* day_rain.json */; };
+		CF85A0712A9BE11100D9D73B /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF85A0702A9BE11100D9D73B /* LocationService.swift */; };
+		CF85A0732A9BEA0C00D9D73B /* Stylable+UISearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF85A0722A9BEA0C00D9D73B /* Stylable+UISearchBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -159,6 +161,8 @@
 		CF85A0592A9BD36B00D9D73B /* night_rain.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = night_rain.json; sourceTree = "<group>"; };
 		CF85A05A2A9BD36B00D9D73B /* day_thunderstorm.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = day_thunderstorm.json; sourceTree = "<group>"; };
 		CF85A05B2A9BD36B00D9D73B /* day_rain.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = day_rain.json; sourceTree = "<group>"; };
+		CF85A0702A9BE11100D9D73B /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
+		CF85A0722A9BEA0C00D9D73B /* Stylable+UISearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Stylable+UISearchBar.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -344,6 +348,7 @@
 				CF10393F2A9B4D14004E4A91 /* ForecastCoordinator.swift */,
 				CF1039412A9B4DF2004E4A91 /* ForecastRepository.swift */,
 				CF1039442A9B4E15004E4A91 /* ForecastRequest.swift */,
+				CF85A0702A9BE11100D9D73B /* LocationService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -387,6 +392,7 @@
 				CF85A0202A9B760200D9D73B /* Stylable.swift */,
 				CF85A02A2A9B763E00D9D73B /* Stylable+UIStackView.swift */,
 				CF85A02C2A9B764B00D9D73B /* Stylable+UITextField.swift */,
+				CF85A0722A9BEA0C00D9D73B /* Stylable+UISearchBar.swift */,
 				CF85A0222A9B760E00D9D73B /* Stylable+UIButton.swift */,
 				CF85A0242A9B761500D9D73B /* Stylable+UIView.swift */,
 				CF85A0262A9B761E00D9D73B /* Stylable+UIControl.swift */,
@@ -584,6 +590,7 @@
 				CF85A0212A9B760200D9D73B /* Stylable.swift in Sources */,
 				CF85A02D2A9B764B00D9D73B /* Stylable+UITextField.swift in Sources */,
 				CF85A00F2A9B554900D9D73B /* Day.swift in Sources */,
+				CF85A0712A9BE11100D9D73B /* LocationService.swift in Sources */,
 				CF10392B2A9A0192004E4A91 /* Network+Logger.swift in Sources */,
 				CF1038ED2A99EF3A004E4A91 /* SceneDelegate.swift in Sources */,
 				CF85A0252A9B761500D9D73B /* Stylable+UIView.swift in Sources */,
@@ -601,6 +608,7 @@
 				CF1039362A9B4C61004E4A91 /* BaseCoordinator.swift in Sources */,
 				CF85A02B2A9B763E00D9D73B /* Stylable+UIStackView.swift in Sources */,
 				CF85A01E2A9B753100D9D73B /* ForecastView.swift in Sources */,
+				CF85A0732A9BEA0C00D9D73B /* Stylable+UISearchBar.swift in Sources */,
 				CF85A0072A9B52F600D9D73B /* CurrentRemote.swift in Sources */,
 				CF1039182A99FE92004E4A91 /* Environment.swift in Sources */,
 				CF85A0292A9B762600D9D73B /* Stylable+UILabel.swift in Sources */,

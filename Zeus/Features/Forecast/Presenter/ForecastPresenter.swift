@@ -33,10 +33,10 @@ final class ForecastPresenter {
 
 // MARK: - Public methods
 extension ForecastPresenter {
-    public func getForecast() {
+    public func getForecast(with query: String) {
         Task {
             do {
-                let weather = try await forecastRepository.get()
+                let weather = try await forecastRepository.getWeather(with: query)
                 view?.onSuccess(content: weather)
             } catch {
                 view?.onFailure(errorMessage: error.localizedDescription)

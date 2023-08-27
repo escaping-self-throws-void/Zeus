@@ -15,14 +15,15 @@ public struct ForecastRepository {
     
     public init() {}
     
-    func get() async throws -> Weather {
-        let data = try await fetch()
+    func getWeather(with query: String) async throws -> Weather {
+        let request = ForecastRequest.forecast(query: query)
+        let data: WeatherResponse = try await network.perform(request)
         return mapper.map(data)
     }
-    
-    private func fetch() async throws -> WeatherResponse {
-        let request = ForecastRequest.forecast(query: "Beirut")
-        let data: WeatherResponse = try await network.perform(request)
-        return data
-    }
+//
+//    private func fetch() async throws -> WeatherResponse {
+//        let request = ForecastRequest.forecast(query: "Beirut")
+//        let data: WeatherResponse = try await network.perform(request)
+//        return data
+//    }
 }

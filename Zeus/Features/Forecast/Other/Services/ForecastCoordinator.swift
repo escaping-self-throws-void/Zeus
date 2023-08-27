@@ -26,6 +26,7 @@ public final class ForecastCoordinator: BaseCoordinator {
 extension ForecastCoordinator {
     private func registerDependencies() {
         DIContainer.register(type: Networking.self, scope: .global, implementer: Network())
+        DIContainer.register(type: LocationService.self, scope: .global, implementer: LocationService())
         DIContainer.register(type: ForecastRepository.self, implementer: ForecastRepository())
         DIContainer.register(type: WeatherMapper.self, implementer: WeatherMapper())
     }

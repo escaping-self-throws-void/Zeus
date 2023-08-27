@@ -18,12 +18,14 @@ final class ForecastView: BaseView {
     private lazy var stackView = UIStackView()
         .axis(.vertical)
         .spacing(10)
-    private(set) lazy var animationView: LottieAnimationView = {
+    private lazy var animationView: LottieAnimationView = {
         let view = LottieAnimationView()
         view.contentMode(.scaleAspectFit)
         view.loopMode = .loop
         return view
     }()
+    private(set) lazy var searchBar = UISearchBar()
+        .placeholder("Zeus Awaits: Enter a City ⚡")
     
     // MARK: - Lifecycle
     override init(frame: CGRect) {
@@ -41,7 +43,10 @@ extension ForecastView {
         todayLabel.attributedText = makeAttributedText(from: content.city, date: content.date)
         tempLabel.text = "\(Int(content.temp))"
         
-        stackView.arrangedSubviews.forEach { stackView.removeArrangedSubview($0) }
+        stackView.arrangedSubviews.forEach { subview in
+            stackView.removeArrangedSubview(subview)
+            subview.removeFromSuperview()
+        }
         content.forecast.forEach { content in
             stackView.addArrangedSubview(DayForecastView(content: content))
         }
