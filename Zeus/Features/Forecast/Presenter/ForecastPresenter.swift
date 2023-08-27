@@ -36,11 +36,18 @@ extension ForecastPresenter {
     public func getForecast(with query: String) {
         Task {
             do {
-                let weather = try await forecastRepository.getWeather(with: query)
+                let weather = try await forecastRepository.fetchWeather(with: query)
                 view?.onSuccess(content: weather)
             } catch {
                 view?.onFailure(errorMessage: error.localizedDescription)
             }
         }
+    }
+    
+    public func getSavedForecast() {
+        guard let result = forecastRepository.fetchSavedWeather() else {
+            return
+        }
+        view?.onSuccess(content: result)
     }
 }

@@ -97,5 +97,116 @@
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "67F876F0-A512-416D-8982-A41999075190"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Zeus/Features/Forecast/Presenter/ForecastPresenter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "49"
+            endingLineNumber = "49"
+            landmarkName = "getSavedForecast()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "67F876F0-A512-416D-8982-A41999075190 - cdd5a3199b7246a4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Zeus.ForecastPresenter.getDB() -&gt; ()"
+                  moduleName = "Zeus"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/paulmatar/Desktop/Zeus/Zeus/Features/Forecast/Presenter/ForecastPresenter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "49"
+                  endingLineNumber = "49"
+                  offsetFromSymbolStart = "204">
+               </Location>
+               <Location
+                  uuid = "67F876F0-A512-416D-8982-A41999075190 - e6caddaef653f1c5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Zeus.ForecastPresenter.getSavedForecast() -&gt; ()"
+                  moduleName = "Zeus"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/paulmatar/Desktop/Zeus/Zeus/Features/Forecast/Presenter/ForecastPresenter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "49"
+                  endingLineNumber = "49"
+                  offsetFromSymbolStart = "220">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "44F35888-9210-4AA1-849D-E097E5419FD7"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Zeus/Features/Forecast/Presenter/ForecastPresenter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
+            landmarkName = "getSavedForecast()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "44F35888-9210-4AA1-849D-E097E5419FD7 - cdd5a3199b72464b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Zeus.ForecastPresenter.getDB() -&gt; ()"
+                  moduleName = "Zeus"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/paulmatar/Desktop/Zeus/Zeus/Features/Forecast/Presenter/ForecastPresenter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "52"
+                  endingLineNumber = "52"
+                  offsetFromSymbolStart = "296">
+               </Location>
+               <Location
+                  uuid = "44F35888-9210-4AA1-849D-E097E5419FD7 - cdd5a3199b72466a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Zeus.ForecastPresenter.getDB() -&gt; ()"
+                  moduleName = "Zeus"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/paulmatar/Desktop/Zeus/Zeus/Features/Forecast/Presenter/ForecastPresenter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "51"
+                  endingLineNumber = "51"
+                  offsetFromSymbolStart = "236">
+               </Location>
+               <Location
+                  uuid = "44F35888-9210-4AA1-849D-E097E5419FD7 - e6caddaef653f10b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Zeus.ForecastPresenter.getSavedForecast() -&gt; ()"
+                  moduleName = "Zeus"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/paulmatar/Desktop/Zeus/Zeus/Features/Forecast/Presenter/ForecastPresenter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "51"
+                  endingLineNumber = "51"
+                  offsetFromSymbolStart = "252">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

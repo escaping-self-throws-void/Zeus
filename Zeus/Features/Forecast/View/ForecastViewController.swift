@@ -19,6 +19,7 @@ final class ForecastViewController: BaseViewController<ForecastView> {
         configureSubviews()
         configureNavigationBar()
         dismissKeyboardOnTap()
+        presenter.getSavedForecast()
     }
 }
 

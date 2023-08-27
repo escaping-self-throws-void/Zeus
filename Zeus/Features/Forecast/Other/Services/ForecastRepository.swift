@@ -10,20 +10,24 @@ import Foundation
 public struct ForecastRepository {
     @Injected(.global)
     private var network: Networking
+    @Injected(.global)
+    private var realmService: RealmService
     @Injected
     private var mapper: WeatherMapper
     
     public init() {}
     
-    func getWeather(with query: String) async throws -> Weather {
+    func fetchWeather(with query: String) async throws -> Weather {
         let request = ForecastRequest.forecast(query: query)
         let data: WeatherResponse = try await network.perform(request)
-        return mapper.map(data)
+        let result = mapper.map(data)
+        await MainActor.run {
+            realmService.save(result)
+        }
+        return result
     }
-//
-//    private func fetch() async throws -> WeatherResponse {
-//        let request = ForecastRequest.forecast(query: "Beirut")
-//        let data: WeatherResponse = try await network.perform(request)
-//        return data
-//    }
+
+    func fetchSavedWeather() -> Weather? {
+        return realmService.readAll()
+    }
 }
