@@ -8,13 +8,7 @@
 import Foundation
 
 struct WeatherResponse: Codable {
-    let list: [ListRemote]
-    let city: CityRemote
-    
-    var toDomain: Forecast {
-        Forecast(
-            list: list.map { $0.toDomain },
-            city: city.toDomain
-        )
-    }
+    let location: LocationRemote
+    let current: CurrentRemote
+    let forecast: ForecastRemote
 }

@@ -13,12 +13,13 @@ public struct ForecastRepository {
     
     public init() {}
     
-    public func get() async throws -> Forecast {
-        return try await fetch().toDomain
+    func get() async throws -> [DayRemote] {
+        let data = try await fetch()
+        return data.forecast.forecastday.map { $0.day }
     }
     
     private func fetch() async throws -> WeatherResponse {
-        let request = ForecastRequest.daily(lat: 44.34, lon: 10.99)
+        let request = ForecastRequest.forecast(query: "44.34,10.99", days: 1)
         let data: WeatherResponse = try await network.perform(request)
         return data
     }

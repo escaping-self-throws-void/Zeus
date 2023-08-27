@@ -8,7 +8,7 @@
 import Foundation
 
 public enum ForecastRequest: NetworkRequest {
-    case daily(lat: Double, lon: Double)
+    case forecast(query: String, days: Int = 4)
     
     public var baseURL: URL? {
         URL(string: Environment.baseURL)
@@ -16,27 +16,28 @@ public enum ForecastRequest: NetworkRequest {
     
     public var path: String {
         switch self {
-        case .daily:
-            return "/data/2.5/forecast"
+        case .forecast:
+            return "/v1/forecast.json"
         }
     }
     
     public var method: RequestMethod {
         switch self {
-        case .daily:
+        case .forecast:
             return .GET
         }
     }
     
     public var queryParams: [String : Any]? {
         switch self {
-        case .daily(let lat, let lon):
+        case .forecast(let query, let days):
             return [
-                "lat": "\(lat)",
-                "lon": "\(lon)",
-                "cnt": "27",
+                "q": "\(query)",
+                "days": "\(days)",
                 "lang": "en",
-                "appid": Environment.apiKey,
+                "aqi": "no",
+                "alerts": "no",
+                "key": Environment.apiKey,
             ]
         }
     }
