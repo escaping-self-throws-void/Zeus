@@ -42,4 +42,18 @@ public extension Stylable where Self: UILabel {
 
         return self
     }
+    
+    @discardableResult
+    func adjustsFontSizeToFitWidth(_ value: Bool) -> Self {
+        self.adjustsFontSizeToFitWidth = value
+
+        return self
+    }
+    
+    @discardableResult
+    func minimumScaleFactor(_ value: CGFloat) -> Self {
+        self.minimumScaleFactor = value
+
+        return self
+    }
 }

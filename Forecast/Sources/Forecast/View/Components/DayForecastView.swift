@@ -12,10 +12,12 @@ final class DayForecastView: BaseView {
     // MARK: - Outlets
     private let dateLabel = UILabel()
         .textColor(.berlin)
+        .font(.plexSansSemiBold(size: 17))
     private let iconView = UIImageView()
         .contentMode(.scaleToFill)
     private let tempLabel = UILabel()
         .textColor(.berlin)
+        .font(.plexSansSemiBold(size: 17))
 
     // MARK: - Lifecycle
     override init(frame: CGRect) {
@@ -50,7 +52,8 @@ extension DayForecastView {
             tempLabel
         ])
             .axis(.horizontal)
-            .spacing(8)
+            .spacing(4)
+            .distribution(.equalSpacing)
             .alignment(.center)
         
         addSubview(stack)

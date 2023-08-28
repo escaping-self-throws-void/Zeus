@@ -31,10 +31,17 @@
 		CF85A06C2A9BD36B00D9D73B /* day_thunderstorm.json in Resources */ = {isa = PBXBuildFile; fileRef = CF85A05A2A9BD36B00D9D73B /* day_thunderstorm.json */; };
 		CF85A06D2A9BD36B00D9D73B /* day_rain.json in Resources */ = {isa = PBXBuildFile; fileRef = CF85A05B2A9BD36B00D9D73B /* day_rain.json */; };
 		CFBB007F2A9C32880085540E /* Forecast in Frameworks */ = {isa = PBXBuildFile; productRef = CFBB007E2A9C32880085540E /* Forecast */; };
+		CFBB00922A9CAD560085540E /* IBMPlexSans-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CFBB00832A9CAD550085540E /* IBMPlexSans-Medium.ttf */; };
+		CFBB00932A9CAD560085540E /* IBMPlexSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CFBB00842A9CAD550085540E /* IBMPlexSans-SemiBold.ttf */; };
+		CFBB00972A9CAD560085540E /* IBMPlexSans-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CFBB00882A9CAD560085540E /* IBMPlexSans-ExtraLight.ttf */; };
+		CFBB00982A9CAD560085540E /* IBMPlexSans-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CFBB00892A9CAD560085540E /* IBMPlexSans-Thin.ttf */; };
+		CFBB009B2A9CAD560085540E /* IBMPlexSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CFBB008C2A9CAD560085540E /* IBMPlexSans-Light.ttf */; };
+		CFBB009D2A9CAD560085540E /* IBMPlexSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CFBB008E2A9CAD560085540E /* IBMPlexSans-Regular.ttf */; };
+		CFBB009F2A9CAD560085540E /* IBMPlexSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CFBB00902A9CAD560085540E /* IBMPlexSans-Bold.ttf */; };
+		CFBB00A22A9CB5470085540E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CFBB00A42A9CB5470085540E /* InfoPlist.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		CF1038E72A99EF3A004E4A91 /* Zeus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = Zeus.app; path = "/Users/paulmatar/Desktop/Zeus/build/Debug-iphoneos/Zeus.app"; sourceTree = "<absolute>"; };
 		CF1038EA2A99EF3A004E4A91 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CF1038EC2A99EF3A004E4A91 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		CF1038F62A99EF3C004E4A91 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -65,6 +72,16 @@
 		CF85A0982A9C290400D9D73B /* Core */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Core; sourceTree = "<group>"; };
 		CF85A0992A9C295000D9D73B /* Design */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Design; sourceTree = "<group>"; };
 		CF85A0A12A9C29D900D9D73B /* Forecast */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Forecast; sourceTree = "<group>"; };
+		CFBB00802A9C338F0085540E /* Zeus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Zeus.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFBB00832A9CAD550085540E /* IBMPlexSans-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexSans-Medium.ttf"; sourceTree = "<group>"; };
+		CFBB00842A9CAD550085540E /* IBMPlexSans-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexSans-SemiBold.ttf"; sourceTree = "<group>"; };
+		CFBB00882A9CAD560085540E /* IBMPlexSans-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexSans-ExtraLight.ttf"; sourceTree = "<group>"; };
+		CFBB00892A9CAD560085540E /* IBMPlexSans-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexSans-Thin.ttf"; sourceTree = "<group>"; };
+		CFBB008C2A9CAD560085540E /* IBMPlexSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexSans-Light.ttf"; sourceTree = "<group>"; };
+		CFBB008E2A9CAD560085540E /* IBMPlexSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexSans-Regular.ttf"; sourceTree = "<group>"; };
+		CFBB00902A9CAD560085540E /* IBMPlexSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexSans-Bold.ttf"; sourceTree = "<group>"; };
+		CFBB00A32A9CB5470085540E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CFBB00A52A9CB54C0085540E /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +104,7 @@
 				CF85A0982A9C290400D9D73B /* Core */,
 				CF85A0972A9C287600D9D73B /* Network */,
 				CF1038E92A99EF3A004E4A91 /* Zeus */,
+				CFBB00802A9C338F0085540E /* Zeus.app */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,6 +114,7 @@
 				CF1039092A99FB8F004E4A91 /* Supporting Files */,
 				CF10390A2A99FC44004E4A91 /* Resources */,
 				CF1038FB2A99EF3C004E4A91 /* Info.plist */,
+				CFBB00A42A9CB5470085540E /* InfoPlist.strings */,
 				CF1039292A99FF3E004E4A91 /* Config.xcconfig */,
 			);
 			path = Zeus;
@@ -115,6 +134,7 @@
 		CF10390A2A99FC44004E4A91 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				CFBB00812A9CAD550085540E /* IBM_Plex_Sans */,
 				CF85A0492A9BD34400D9D73B /* Animations */,
 				CF1038F62A99EF3C004E4A91 /* Assets.xcassets */,
 			);
@@ -146,6 +166,20 @@
 			path = Animations;
 			sourceTree = "<group>";
 		};
+		CFBB00812A9CAD550085540E /* IBM_Plex_Sans */ = {
+			isa = PBXGroup;
+			children = (
+				CFBB00832A9CAD550085540E /* IBMPlexSans-Medium.ttf */,
+				CFBB00842A9CAD550085540E /* IBMPlexSans-SemiBold.ttf */,
+				CFBB00882A9CAD560085540E /* IBMPlexSans-ExtraLight.ttf */,
+				CFBB00892A9CAD560085540E /* IBMPlexSans-Thin.ttf */,
+				CFBB008C2A9CAD560085540E /* IBMPlexSans-Light.ttf */,
+				CFBB008E2A9CAD560085540E /* IBMPlexSans-Regular.ttf */,
+				CFBB00902A9CAD560085540E /* IBMPlexSans-Bold.ttf */,
+			);
+			path = IBM_Plex_Sans;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -166,7 +200,7 @@
 				CFBB007E2A9C32880085540E /* Forecast */,
 			);
 			productName = Zeus;
-			productReference = CF1038E72A99EF3A004E4A91 /* Zeus.app */;
+			productReference = CFBB00802A9C338F0085540E /* Zeus.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -213,25 +247,33 @@
 			buildActionMask = 2147483647;
 			files = (
 				CF85A05C2A9BD36B00D9D73B /* day_clearSky.json in Resources */,
+				CFBB00A22A9CB5470085540E /* InfoPlist.strings in Resources */,
 				CF85A0652A9BD36B00D9D73B /* day_scatteredClouds.json in Resources */,
+				CFBB009B2A9CAD560085540E /* IBMPlexSans-Light.ttf in Resources */,
 				CF85A06B2A9BD36B00D9D73B /* night_rain.json in Resources */,
 				CF85A0682A9BD36B00D9D73B /* night_clearSky.json in Resources */,
 				CF85A0622A9BD36B00D9D73B /* night_brokenClouds.json in Resources */,
 				CF85A0642A9BD36B00D9D73B /* day_showerRains.json in Resources */,
 				CF85A05D2A9BD36B00D9D73B /* night_mist.json in Resources */,
+				CFBB009D2A9CAD560085540E /* IBMPlexSans-Regular.ttf in Resources */,
 				CF1038FA2A99EF3C004E4A91 /* LaunchScreen.storyboard in Resources */,
+				CFBB00922A9CAD560085540E /* IBMPlexSans-Medium.ttf in Resources */,
 				CF85A0612A9BD36B00D9D73B /* night_scatteredClouds.json in Resources */,
 				CF85A05F2A9BD36B00D9D73B /* night_showerRains.json in Resources */,
+				CFBB009F2A9CAD560085540E /* IBMPlexSans-Bold.ttf in Resources */,
 				CF1038F72A99EF3C004E4A91 /* Assets.xcassets in Resources */,
 				CF85A05E2A9BD36B00D9D73B /* day_snow.json in Resources */,
 				CF85A0662A9BD36B00D9D73B /* night_fewClouds.json in Resources */,
+				CFBB00982A9CAD560085540E /* IBMPlexSans-Thin.ttf in Resources */,
 				CF85A06D2A9BD36B00D9D73B /* day_rain.json in Resources */,
 				CF85A06A2A9BD36B00D9D73B /* day_mist.json in Resources */,
 				CF85A0632A9BD36B00D9D73B /* day_fewClouds.json in Resources */,
 				CF85A0672A9BD36B00D9D73B /* day_brokenClouds.json in Resources */,
 				CF85A06C2A9BD36B00D9D73B /* day_thunderstorm.json in Resources */,
 				CF85A0602A9BD36B00D9D73B /* night_snow.json in Resources */,
+				CFBB00972A9CAD560085540E /* IBMPlexSans-ExtraLight.ttf in Resources */,
 				CF85A0692A9BD36B00D9D73B /* night_thunderstorm.json in Resources */,
+				CFBB00932A9CAD560085540E /* IBMPlexSans-SemiBold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +300,15 @@
 				CF85A0902A9C194E00D9D73B /* ru */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		CFBB00A42A9CB5470085540E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CFBB00A32A9CB5470085540E /* en */,
+				CFBB00A52A9CB54C0085540E /* ru */,
+			);
+			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

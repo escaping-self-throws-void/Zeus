@@ -39,6 +39,7 @@ extension ForecastViewController {
         
         locationService.onError = { [weak self] errorMessage in
             self?.showAlert(title: Texts.Errors.errorTitle, message: errorMessage)
+            self?.isLoading(false)
         }
         locationService.onSuccess = { [weak self] location in
             let lat = location.coordinate.latitude

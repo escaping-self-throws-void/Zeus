@@ -14,17 +14,22 @@ final class ForecastView: BaseView {
     private lazy var todayLabel = UILabel()
         .numberOfLines(2)
         .textAlignment(.center)
+        .font(.plexSansSemiBold(size: 18))
     
     private lazy var stackView = UIStackView()
         .axis(.vertical)
         .spacing(10)
     
     private(set) lazy var tempLabel = UILabel()
-        .font(.monospacedSystemFont(ofSize: 250, weight: .bold))
+        .font(.plexSansBold(size: 250))
+        .textAlignment(.center)
+        .adjustsFontSizeToFitWidth(true)
+        .minimumScaleFactor(0.6)
         .textColor(.zeus)
     
     private(set) lazy var searchBar = UISearchBar()
         .placeholder(Texts.Forecast.searchPlaceholder)
+        .font(.plexSansRegular(size: 17))
     
     private lazy var animationView: LottieAnimationView = {
         let view = LottieAnimationView()
@@ -61,7 +66,7 @@ extension ForecastView {
         animationView.animation = .named(content.animation)
         animationView.play()
         todayLabel.attributedText = makeAttributedText(from: content.city, date: content.date)
-        tempLabel.text = "\(Int(content.temp))"
+        tempLabel.text = "\(Int(content.temp))°"
         
         stackView.arrangedSubviews.forEach { subview in
             stackView.removeArrangedSubview(subview)
@@ -98,6 +103,7 @@ extension ForecastView {
         
         tempLabel.snp.makeConstraints { make in
             make.center.equalToSuperview()
+            make.horizontalEdges.equalToSuperview().inset(16)
         }
         
         activityIndicator.snp.makeConstraints { make in

@@ -16,6 +16,13 @@ public extension Stylable where Self: UISearchBar {
     }
     
     @discardableResult
+    func font(_ value: UIFont) -> Self {
+        self.searchTextField.font = value
+        
+        return self
+    }
+    
+    @discardableResult
     func tintColor(_ value: UIColor) -> Self {
         self.tintColor = value
         

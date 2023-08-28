@@ -31,6 +31,8 @@ public enum ForecastRequest: NetworkRequest {
     }
     
     public var queryParams: [String : Any]? {
+        let lang = Locale.current.language.languageCode?.identifier ?? "en"
+        
         switch self {
         case .forecast(let query, let days):
             return [
@@ -38,6 +40,7 @@ public enum ForecastRequest: NetworkRequest {
                 "days": "\(days)",
                 "aqi": "no",
                 "alerts": "no",
+                "lang": lang,
                 "key": Environment.apiKey,
             ]
         }

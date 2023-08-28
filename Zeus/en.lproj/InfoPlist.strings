@@ -1,0 +1,10 @@
+/* 
+  InfoPlist.strings
+  Zeus
+
+  Created by Paul Matar on 28/08/2023.
+  
+*/
+
+"NSLocationWhenInUseUsageDescription" = "Zeus needs to know your location to give a forecast";
+"NSLocationAlwaysAndWhenInUseUsageDescription" = "Zeus needs to know your location to give a forecast";
