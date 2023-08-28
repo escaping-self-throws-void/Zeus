@@ -15,6 +15,7 @@ final class ForecastView: BaseView {
         .textAlignment(.center)
     private lazy var tempLabel = UILabel()
         .font(.monospacedSystemFont(ofSize: 250, weight: .bold))
+        .textColor(.metalGray.withAlphaComponent(0.95))
     private lazy var stackView = UIStackView()
         .axis(.vertical)
         .spacing(10)
@@ -25,7 +26,7 @@ final class ForecastView: BaseView {
         return view
     }()
     private(set) lazy var searchBar = UISearchBar()
-        .placeholder("Zeus Awaits: Enter a City ⚡")
+        .placeholder(Texts.Forecast.searchPlaceholder)
     
     // MARK: - Lifecycle
     override init(frame: CGRect) {
@@ -61,7 +62,7 @@ extension ForecastView {
         animationView.snp.makeConstraints { make in
             make.center.equalToSuperview()
             make.height.equalTo(375)
-            make.width.equalToSuperview().inset(16)
+            make.width.equalToSuperview()
         }
         
         todayLabel.snp.makeConstraints { make in

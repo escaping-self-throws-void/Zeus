@@ -70,7 +70,7 @@ final class RealmService {
                 completion()
             }
         } catch {
-            print(error)
+            debugPrint(error)
         }
     }
 }

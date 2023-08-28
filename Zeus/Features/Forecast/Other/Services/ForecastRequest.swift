@@ -34,7 +34,6 @@ public enum ForecastRequest: NetworkRequest {
             return [
                 "q": "\(query)",
                 "days": "\(days)",
-                "lang": "en",
                 "aqi": "no",
                 "alerts": "no",
                 "key": Environment.apiKey,

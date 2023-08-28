@@ -88,6 +88,12 @@
 		CF85A07D2A9C018000D9D73B /* RealmService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF85A07C2A9C018000D9D73B /* RealmService.swift */; };
 		CF85A0802A9C02C600D9D73B /* WeatherRealm.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF85A07F2A9C02C600D9D73B /* WeatherRealm.swift */; };
 		CF85A0822A9C02CB00D9D73B /* DayRealm.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF85A0812A9C02CB00D9D73B /* DayRealm.swift */; };
+		CF85A0842A9C133800D9D73B /* UIViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF85A0832A9C133800D9D73B /* UIViewController+Alert.swift */; };
+		CF85A0862A9C138300D9D73B /* UIAlertController+Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF85A0852A9C138300D9D73B /* UIAlertController+Error.swift */; };
+		CF85A0882A9C168D00D9D73B /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF85A0872A9C168D00D9D73B /* Images.swift */; };
+		CF85A08A2A9C169300D9D73B /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF85A0892A9C169300D9D73B /* Colors.swift */; };
+		CF85A08C2A9C169900D9D73B /* Texts.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF85A08B2A9C169900D9D73B /* Texts.swift */; };
+		CF85A0912A9C196000D9D73B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CF85A0932A9C196000D9D73B /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -171,6 +177,14 @@
 		CF85A07C2A9C018000D9D73B /* RealmService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmService.swift; sourceTree = "<group>"; };
 		CF85A07F2A9C02C600D9D73B /* WeatherRealm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherRealm.swift; sourceTree = "<group>"; };
 		CF85A0812A9C02CB00D9D73B /* DayRealm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayRealm.swift; sourceTree = "<group>"; };
+		CF85A0832A9C133800D9D73B /* UIViewController+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alert.swift"; sourceTree = "<group>"; };
+		CF85A0852A9C138300D9D73B /* UIAlertController+Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Error.swift"; sourceTree = "<group>"; };
+		CF85A0872A9C168D00D9D73B /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
+		CF85A0892A9C169300D9D73B /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		CF85A08B2A9C169900D9D73B /* Texts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Texts.swift; sourceTree = "<group>"; };
+		CF85A0902A9C194E00D9D73B /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		CF85A0922A9C196000D9D73B /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		CF85A0942A9C196B00D9D73B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -418,6 +432,8 @@
 			isa = PBXGroup;
 			children = (
 				CF85A02F2A9B77DD00D9D73B /* UIView+SnapKit.swift */,
+				CF85A0832A9C133800D9D73B /* UIViewController+Alert.swift */,
+				CF85A0852A9C138300D9D73B /* UIAlertController+Error.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -434,6 +450,9 @@
 			isa = PBXGroup;
 			children = (
 				CF85A0392A9B8E8F00D9D73B /* ConditionList.swift */,
+				CF85A0872A9C168D00D9D73B /* Images.swift */,
+				CF85A0892A9C169300D9D73B /* Colors.swift */,
+				CF85A08B2A9C169900D9D73B /* Texts.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -441,6 +460,7 @@
 		CF85A0452A9BB98E00D9D73B /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				CF85A08D2A9C191A00D9D73B /* Localization */,
 				CF85A0462A9BB99A00D9D73B /* Extensions */,
 				CF85A0382A9B8E8400D9D73B /* Constants */,
 				CF10392E2A9B4C06004E4A91 /* Services */,
@@ -488,6 +508,14 @@
 				CF85A0812A9C02CB00D9D73B /* DayRealm.swift */,
 			);
 			path = Realm;
+			sourceTree = "<group>";
+		};
+		CF85A08D2A9C191A00D9D73B /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				CF85A0932A9C196000D9D73B /* Localizable.strings */,
+			);
+			path = Localization;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -538,6 +566,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ru,
 			);
 			mainGroup = CF1038DE2A99EF3A004E4A91;
 			packageReferences = (
@@ -569,6 +598,7 @@
 				CF1038FA2A99EF3C004E4A91 /* LaunchScreen.storyboard in Resources */,
 				CF85A0612A9BD36B00D9D73B /* night_scatteredClouds.json in Resources */,
 				CF85A05F2A9BD36B00D9D73B /* night_showerRains.json in Resources */,
+				CF85A0912A9C196000D9D73B /* Localizable.strings in Resources */,
 				CF1038F72A99EF3C004E4A91 /* Assets.xcassets in Resources */,
 				CF85A05E2A9BD36B00D9D73B /* day_snow.json in Resources */,
 				CF85A0662A9BD36B00D9D73B /* night_fewClouds.json in Resources */,
@@ -597,6 +627,8 @@
 				CF10393A2A9B4C7A004E4A91 /* Routable.swift in Sources */,
 				CF1039282A99FF11004E4A91 /* RequestMethod.swift in Sources */,
 				CF85A00B2A9B540900D9D73B /* ForecastRemote.swift in Sources */,
+				CF85A08C2A9C169900D9D73B /* Texts.swift in Sources */,
+				CF85A0862A9C138300D9D73B /* UIAlertController+Error.swift in Sources */,
 				CF1039322A9B4C2A004E4A91 /* Injected.swift in Sources */,
 				CF85A0032A9B528F00D9D73B /* WeatherResponse.swift in Sources */,
 				CF85A0822A9C02CB00D9D73B /* DayRealm.swift in Sources */,
@@ -625,10 +657,12 @@
 				CF85A03C2A9B905F00D9D73B /* Stylable+UIImageView.swift in Sources */,
 				CF85A0232A9B760E00D9D73B /* Stylable+UIButton.swift in Sources */,
 				CF85A0112A9B559900D9D73B /* WeatherMapper.swift in Sources */,
+				CF85A0882A9C168D00D9D73B /* Images.swift in Sources */,
 				CF85A07D2A9C018000D9D73B /* RealmService.swift in Sources */,
 				CF85A0442A9BB92900D9D73B /* DateFormatter+Current.swift in Sources */,
 				CF1039202A99FEE9004E4A91 /* NetworkError.swift in Sources */,
 				CF85A01C2A9B749100D9D73B /* BaseViewController.swift in Sources */,
+				CF85A08A2A9C169300D9D73B /* Colors.swift in Sources */,
 				CF1039302A9B4C25004E4A91 /* DIContainer.swift in Sources */,
 				CF10391C2A99FEDA004E4A91 /* Network.swift in Sources */,
 				CF85A0132A9B5F8100D9D73B /* ForecastdayRemote.swift in Sources */,
@@ -638,6 +672,7 @@
 				CF85A0732A9BEA0C00D9D73B /* Stylable+UISearchBar.swift in Sources */,
 				CF85A0072A9B52F600D9D73B /* CurrentRemote.swift in Sources */,
 				CF1039182A99FE92004E4A91 /* Environment.swift in Sources */,
+				CF85A0842A9C133800D9D73B /* UIViewController+Alert.swift in Sources */,
 				CF85A0292A9B762600D9D73B /* Stylable+UILabel.swift in Sources */,
 				CF85A0052A9B52E100D9D73B /* LocationRemote.swift in Sources */,
 				CF1039342A9B4C2F004E4A91 /* Scope.swift in Sources */,
@@ -656,8 +691,18 @@
 			isa = PBXVariantGroup;
 			children = (
 				CF1038F92A99EF3C004E4A91 /* Base */,
+				CF85A0902A9C194E00D9D73B /* ru */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		CF85A0932A9C196000D9D73B /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF85A0922A9C196000D9D73B /* ru */,
+				CF85A0942A9C196B00D9D73B /* en */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -668,6 +713,7 @@
 			baseConfigurationReference = CF1039292A99FF3E004E4A91 /* OWConfig.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -729,6 +775,7 @@
 			baseConfigurationReference = CF1039292A99FF3E004E4A91 /* OWConfig.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";

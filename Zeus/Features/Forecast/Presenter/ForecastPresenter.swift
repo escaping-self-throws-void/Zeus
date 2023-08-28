@@ -39,7 +39,7 @@ extension ForecastPresenter {
                 let weather = try await forecastRepository.fetchWeather(with: query)
                 view?.onSuccess(content: weather)
             } catch {
-                view?.onFailure(errorMessage: error.localizedDescription)
+                view?.onFailure(errorMessage: handle(error: error))
             }
         }
     }
@@ -49,5 +49,31 @@ extension ForecastPresenter {
             return
         }
         view?.onSuccess(content: result)
+    }
+}
+
+// MARK: - Private methods
+extension ForecastPresenter {
+    private func handle(error: Error) -> String {
+        guard let networkError = error as? NetworkError else {
+            return error.localizedDescription
+        }
+        
+        switch networkError {
+        case .noInternetConnection:
+            return Texts.Errors.noInternetConnection
+        case .invalidURL:
+            return Texts.Errors.invalidURL
+        case .invalidServerResponse:
+            return Texts.Errors.invalidServerResponse
+        case .serverError:
+            return Texts.Errors.serverError
+        case .unauthorized:
+            return Texts.Errors.unauthorized
+        case .forbidden:
+            return Texts.Errors.forbidden
+        default:
+            return Texts.Errors.badRequest
+        }
     }
 }

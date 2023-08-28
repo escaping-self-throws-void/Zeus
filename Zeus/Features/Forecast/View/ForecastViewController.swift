@@ -26,15 +26,15 @@ final class ForecastViewController: BaseViewController<ForecastView> {
 // MARK: - Private methods
 extension ForecastViewController {
     private func configureSubviews() {
-        view.backgroundColor = .white
+        view.backgroundColor = .darkGray
         customView.searchBar.delegate = self
         locationService.onSuccess = { [weak self] location in
             let lat = location.coordinate.latitude
             let lon = location.coordinate.longitude
             self?.presenter.getForecast(with: "\(lat),\(lon)")
         }
-        locationService.onError = { errorMessage in
-            print(errorMessage)
+        locationService.onError = { [weak self] errorMessage in
+            self?.showAlert(title: Texts.Errors.errorTitle, message: errorMessage)
         }
     }
     
@@ -87,7 +87,7 @@ extension ForecastViewController: ForecastPresenterView {
     }
     
     func onFailure(errorMessage: String) {
-        
+        showAlert(title: Texts.Errors.errorTitle, message: errorMessage)
     }
 }
 

@@ -1,0 +1,17 @@
+/* 
+  Localizable.strings
+  Zeus
+
+  Created by Paul Matar on 28/08/2023.
+  
+*/
+"error_title" = "Error";
+"no_internet_connection" = "It seems you're not online. Please verify your internet connectivity.";
+"invalid_url" = "Invalid URL address";
+"invalid_server_response" = "Failed to parse the response to HTTPResponse";
+"server_error" = "We encounter a server issue. Please try again.";
+"unauthorized" = "You're not authorized to execute this request.";
+"forbidden" = "You're not authorized to execute this request. Please verify the token validity.";
+"bad_request" = "Bad Request, please verify your input.";
+
+"search_placeholder" = "Zeus Awaits: Enter a City ⚡";
