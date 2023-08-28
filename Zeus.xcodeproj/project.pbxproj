@@ -9,60 +9,9 @@
 /* Begin PBXBuildFile section */
 		CF1038EB2A99EF3A004E4A91 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1038EA2A99EF3A004E4A91 /* AppDelegate.swift */; };
 		CF1038ED2A99EF3A004E4A91 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1038EC2A99EF3A004E4A91 /* SceneDelegate.swift */; };
-		CF1038EF2A99EF3A004E4A91 /* ForecastViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1038EE2A99EF3A004E4A91 /* ForecastViewController.swift */; };
 		CF1038F72A99EF3C004E4A91 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF1038F62A99EF3C004E4A91 /* Assets.xcassets */; };
 		CF1038FA2A99EF3C004E4A91 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF1038F82A99EF3C004E4A91 /* LaunchScreen.storyboard */; };
-		CF1039082A99FAEC004E4A91 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = CF1039072A99FAEC004E4A91 /* Lottie */; };
-		CF1039182A99FE92004E4A91 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1039172A99FE91004E4A91 /* Environment.swift */; };
-		CF10391A2A99FEA8004E4A91 /* Typealiases.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1039192A99FEA8004E4A91 /* Typealiases.swift */; };
-		CF10391C2A99FEDA004E4A91 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF10391B2A99FEDA004E4A91 /* Network.swift */; };
-		CF10391E2A99FEE0004E4A91 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF10391D2A99FEE0004E4A91 /* Networking.swift */; };
-		CF1039202A99FEE9004E4A91 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF10391F2A99FEE9004E4A91 /* NetworkError.swift */; };
-		CF1039222A99FEF8004E4A91 /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1039212A99FEF8004E4A91 /* NetworkRequest.swift */; };
-		CF1039242A99FF00004E4A91 /* NetworkStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1039232A99FF00004E4A91 /* NetworkStatus.swift */; };
-		CF1039262A99FF0B004E4A91 /* RequestBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1039252A99FF0B004E4A91 /* RequestBody.swift */; };
-		CF1039282A99FF11004E4A91 /* RequestMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1039272A99FF11004E4A91 /* RequestMethod.swift */; };
-		CF10392B2A9A0192004E4A91 /* Network+Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF10392A2A9A0192004E4A91 /* Network+Logger.swift */; };
-		CF10392D2A9A02EF004E4A91 /* Data+PrettyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF10392C2A9A02EF004E4A91 /* Data+PrettyJSON.swift */; };
-		CF1039302A9B4C25004E4A91 /* DIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF10392F2A9B4C25004E4A91 /* DIContainer.swift */; };
-		CF1039322A9B4C2A004E4A91 /* Injected.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1039312A9B4C2A004E4A91 /* Injected.swift */; };
-		CF1039342A9B4C2F004E4A91 /* Scope.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1039332A9B4C2F004E4A91 /* Scope.swift */; };
-		CF1039362A9B4C61004E4A91 /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1039352A9B4C61004E4A91 /* BaseCoordinator.swift */; };
-		CF1039382A9B4C68004E4A91 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1039372A9B4C68004E4A91 /* Coordinator.swift */; };
-		CF10393A2A9B4C7A004E4A91 /* Routable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1039392A9B4C7A004E4A91 /* Routable.swift */; };
-		CF10393C2A9B4C7F004E4A91 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF10393B2A9B4C7F004E4A91 /* Router.swift */; };
 		CF10393E2A9B4CD6004E4A91 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF10393D2A9B4CD6004E4A91 /* AppCoordinator.swift */; };
-		CF1039402A9B4D14004E4A91 /* ForecastCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF10393F2A9B4D14004E4A91 /* ForecastCoordinator.swift */; };
-		CF1039422A9B4DF2004E4A91 /* ForecastRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1039412A9B4DF2004E4A91 /* ForecastRepository.swift */; };
-		CF1039452A9B4E15004E4A91 /* ForecastRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1039442A9B4E15004E4A91 /* ForecastRequest.swift */; };
-		CF1039482A9B4F3D004E4A91 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = CF1039472A9B4F3D004E4A91 /* SnapKit */; };
-		CF85A0032A9B528F00D9D73B /* WeatherResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF85A0022A9B528F00D9D73B /* WeatherResponse.swift */; };
-		CF85A0052A9B52E100D9D73B /* LocationRemote.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF85A0042A9B52E100D9D73B /* LocationRemote.swift */; };
-		CF85A0072A9B52F600D9D73B /* CurrentRemote.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF85A0062A9B52F600D9D73B /* CurrentRemote.swift */; };
-		CF85A0092A9B530900D9D73B /* ConditionRemote.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF85A0082A9B530900D9D73B /* ConditionRemote.swift */; };
-		CF85A00B2A9B540900D9D73B /* ForecastRemote.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF85A00A2A9B540900D9D73B /* ForecastRemote.swift */; };
-		CF85A00D2A9B554200D9D73B /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF85A00C2A9B554200D9D73B /* Weather.swift */; };
-		CF85A00F2A9B554900D9D73B /* Day.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF85A00E2A9B554900D9D73B /* Day.swift */; };
-		CF85A0112A9B559900D9D73B /* WeatherMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF85A0102A9B559900D9D73B /* WeatherMapper.swift */; };
-		CF85A0132A9B5F8100D9D73B /* ForecastdayRemote.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF85A0122A9B5F8100D9D73B /* ForecastdayRemote.swift */; };
-		CF85A0152A9B697100D9D73B /* ForecastPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF85A0142A9B697100D9D73B /* ForecastPresenter.swift */; };
-		CF85A01A2A9B748A00D9D73B /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF85A0192A9B748A00D9D73B /* BaseView.swift */; };
-		CF85A01C2A9B749100D9D73B /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF85A01B2A9B749100D9D73B /* BaseViewController.swift */; };
-		CF85A01E2A9B753100D9D73B /* ForecastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF85A01D2A9B753100D9D73B /* ForecastView.swift */; };
-		CF85A0212A9B760200D9D73B /* Stylable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF85A0202A9B760200D9D73B /* Stylable.swift */; };
-		CF85A0232A9B760E00D9D73B /* Stylable+UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF85A0222A9B760E00D9D73B /* Stylable+UIButton.swift */; };
-		CF85A0252A9B761500D9D73B /* Stylable+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF85A0242A9B761500D9D73B /* Stylable+UIView.swift */; };
-		CF85A0272A9B761E00D9D73B /* Stylable+UIControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF85A0262A9B761E00D9D73B /* Stylable+UIControl.swift */; };
-		CF85A0292A9B762600D9D73B /* Stylable+UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF85A0282A9B762600D9D73B /* Stylable+UILabel.swift */; };
-		CF85A02B2A9B763E00D9D73B /* Stylable+UIStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF85A02A2A9B763E00D9D73B /* Stylable+UIStackView.swift */; };
-		CF85A02D2A9B764B00D9D73B /* Stylable+UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF85A02C2A9B764B00D9D73B /* Stylable+UITextField.swift */; };
-		CF85A0302A9B77DD00D9D73B /* UIView+SnapKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF85A02F2A9B77DD00D9D73B /* UIView+SnapKit.swift */; };
-		CF85A0332A9B7E8400D9D73B /* DayForecastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF85A0322A9B7E8400D9D73B /* DayForecastView.swift */; };
-		CF85A0352A9B8AC400D9D73B /* DayRemote.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF85A0342A9B8AC400D9D73B /* DayRemote.swift */; };
-		CF85A03A2A9B8E8F00D9D73B /* ConditionList.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF85A0392A9B8E8F00D9D73B /* ConditionList.swift */; };
-		CF85A03C2A9B905F00D9D73B /* Stylable+UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF85A03B2A9B905F00D9D73B /* Stylable+UIImageView.swift */; };
-		CF85A0442A9BB92900D9D73B /* DateFormatter+Current.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF85A0432A9BB92900D9D73B /* DateFormatter+Current.swift */; };
-		CF85A0482A9BB9A700D9D73B /* Date+Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF85A0472A9BB9A700D9D73B /* Date+Text.swift */; };
 		CF85A05C2A9BD36B00D9D73B /* day_clearSky.json in Resources */ = {isa = PBXBuildFile; fileRef = CF85A04A2A9BD36A00D9D73B /* day_clearSky.json */; };
 		CF85A05D2A9BD36B00D9D73B /* night_mist.json in Resources */ = {isa = PBXBuildFile; fileRef = CF85A04B2A9BD36A00D9D73B /* night_mist.json */; };
 		CF85A05E2A9BD36B00D9D73B /* day_snow.json in Resources */ = {isa = PBXBuildFile; fileRef = CF85A04C2A9BD36A00D9D73B /* day_snow.json */; };
@@ -81,79 +30,18 @@
 		CF85A06B2A9BD36B00D9D73B /* night_rain.json in Resources */ = {isa = PBXBuildFile; fileRef = CF85A0592A9BD36B00D9D73B /* night_rain.json */; };
 		CF85A06C2A9BD36B00D9D73B /* day_thunderstorm.json in Resources */ = {isa = PBXBuildFile; fileRef = CF85A05A2A9BD36B00D9D73B /* day_thunderstorm.json */; };
 		CF85A06D2A9BD36B00D9D73B /* day_rain.json in Resources */ = {isa = PBXBuildFile; fileRef = CF85A05B2A9BD36B00D9D73B /* day_rain.json */; };
-		CF85A0712A9BE11100D9D73B /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF85A0702A9BE11100D9D73B /* LocationService.swift */; };
-		CF85A0732A9BEA0C00D9D73B /* Stylable+UISearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF85A0722A9BEA0C00D9D73B /* Stylable+UISearchBar.swift */; };
-		CF85A0792A9C00CE00D9D73B /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = CF85A0782A9C00CE00D9D73B /* Realm */; };
-		CF85A07B2A9C00CE00D9D73B /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = CF85A07A2A9C00CE00D9D73B /* RealmSwift */; };
-		CF85A07D2A9C018000D9D73B /* RealmService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF85A07C2A9C018000D9D73B /* RealmService.swift */; };
-		CF85A0802A9C02C600D9D73B /* WeatherRealm.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF85A07F2A9C02C600D9D73B /* WeatherRealm.swift */; };
-		CF85A0822A9C02CB00D9D73B /* DayRealm.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF85A0812A9C02CB00D9D73B /* DayRealm.swift */; };
-		CF85A0842A9C133800D9D73B /* UIViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF85A0832A9C133800D9D73B /* UIViewController+Alert.swift */; };
-		CF85A0862A9C138300D9D73B /* UIAlertController+Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF85A0852A9C138300D9D73B /* UIAlertController+Error.swift */; };
-		CF85A08A2A9C169300D9D73B /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF85A0892A9C169300D9D73B /* Colors.swift */; };
-		CF85A08C2A9C169900D9D73B /* Texts.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF85A08B2A9C169900D9D73B /* Texts.swift */; };
-		CF85A0912A9C196000D9D73B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CF85A0932A9C196000D9D73B /* Localizable.strings */; };
-		CF85A0962A9C224C00D9D73B /* Double+Fahrenheit.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF85A0952A9C224C00D9D73B /* Double+Fahrenheit.swift */; };
+		CFBB007F2A9C32880085540E /* Forecast in Frameworks */ = {isa = PBXBuildFile; productRef = CFBB007E2A9C32880085540E /* Forecast */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		CF1038E72A99EF3A004E4A91 /* Zeus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Zeus.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF1038E72A99EF3A004E4A91 /* Zeus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = Zeus.app; path = "/Users/paulmatar/Desktop/Zeus/build/Debug-iphoneos/Zeus.app"; sourceTree = "<absolute>"; };
 		CF1038EA2A99EF3A004E4A91 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CF1038EC2A99EF3A004E4A91 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CF1038EE2A99EF3A004E4A91 /* ForecastViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastViewController.swift; sourceTree = "<group>"; };
 		CF1038F62A99EF3C004E4A91 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CF1038F92A99EF3C004E4A91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CF1038FB2A99EF3C004E4A91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CF1039172A99FE91004E4A91 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
-		CF1039192A99FEA8004E4A91 /* Typealiases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Typealiases.swift; sourceTree = "<group>"; };
-		CF10391B2A99FEDA004E4A91 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
-		CF10391D2A99FEE0004E4A91 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
-		CF10391F2A99FEE9004E4A91 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
-		CF1039212A99FEF8004E4A91 /* NetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
-		CF1039232A99FF00004E4A91 /* NetworkStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkStatus.swift; sourceTree = "<group>"; };
-		CF1039252A99FF0B004E4A91 /* RequestBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestBody.swift; sourceTree = "<group>"; };
-		CF1039272A99FF11004E4A91 /* RequestMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestMethod.swift; sourceTree = "<group>"; };
-		CF1039292A99FF3E004E4A91 /* OWConfig.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = OWConfig.xcconfig; sourceTree = "<group>"; };
-		CF10392A2A9A0192004E4A91 /* Network+Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Network+Logger.swift"; sourceTree = "<group>"; };
-		CF10392C2A9A02EF004E4A91 /* Data+PrettyJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+PrettyJSON.swift"; sourceTree = "<group>"; };
-		CF10392F2A9B4C25004E4A91 /* DIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIContainer.swift; sourceTree = "<group>"; };
-		CF1039312A9B4C2A004E4A91 /* Injected.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Injected.swift; sourceTree = "<group>"; };
-		CF1039332A9B4C2F004E4A91 /* Scope.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scope.swift; sourceTree = "<group>"; };
-		CF1039352A9B4C61004E4A91 /* BaseCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
-		CF1039372A9B4C68004E4A91 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
-		CF1039392A9B4C7A004E4A91 /* Routable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routable.swift; sourceTree = "<group>"; };
-		CF10393B2A9B4C7F004E4A91 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		CF1039292A99FF3E004E4A91 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		CF10393D2A9B4CD6004E4A91 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
-		CF10393F2A9B4D14004E4A91 /* ForecastCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastCoordinator.swift; sourceTree = "<group>"; };
-		CF1039412A9B4DF2004E4A91 /* ForecastRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastRepository.swift; sourceTree = "<group>"; };
-		CF1039442A9B4E15004E4A91 /* ForecastRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastRequest.swift; sourceTree = "<group>"; };
-		CF85A0022A9B528F00D9D73B /* WeatherResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherResponse.swift; sourceTree = "<group>"; };
-		CF85A0042A9B52E100D9D73B /* LocationRemote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationRemote.swift; sourceTree = "<group>"; };
-		CF85A0062A9B52F600D9D73B /* CurrentRemote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentRemote.swift; sourceTree = "<group>"; };
-		CF85A0082A9B530900D9D73B /* ConditionRemote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConditionRemote.swift; sourceTree = "<group>"; };
-		CF85A00A2A9B540900D9D73B /* ForecastRemote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastRemote.swift; sourceTree = "<group>"; };
-		CF85A00C2A9B554200D9D73B /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
-		CF85A00E2A9B554900D9D73B /* Day.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day.swift; sourceTree = "<group>"; };
-		CF85A0102A9B559900D9D73B /* WeatherMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherMapper.swift; sourceTree = "<group>"; };
-		CF85A0122A9B5F8100D9D73B /* ForecastdayRemote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastdayRemote.swift; sourceTree = "<group>"; };
-		CF85A0142A9B697100D9D73B /* ForecastPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastPresenter.swift; sourceTree = "<group>"; };
-		CF85A0192A9B748A00D9D73B /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
-		CF85A01B2A9B749100D9D73B /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
-		CF85A01D2A9B753100D9D73B /* ForecastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastView.swift; sourceTree = "<group>"; };
-		CF85A0202A9B760200D9D73B /* Stylable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stylable.swift; sourceTree = "<group>"; };
-		CF85A0222A9B760E00D9D73B /* Stylable+UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Stylable+UIButton.swift"; sourceTree = "<group>"; };
-		CF85A0242A9B761500D9D73B /* Stylable+UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Stylable+UIView.swift"; sourceTree = "<group>"; };
-		CF85A0262A9B761E00D9D73B /* Stylable+UIControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Stylable+UIControl.swift"; sourceTree = "<group>"; };
-		CF85A0282A9B762600D9D73B /* Stylable+UILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Stylable+UILabel.swift"; sourceTree = "<group>"; };
-		CF85A02A2A9B763E00D9D73B /* Stylable+UIStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Stylable+UIStackView.swift"; sourceTree = "<group>"; };
-		CF85A02C2A9B764B00D9D73B /* Stylable+UITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Stylable+UITextField.swift"; sourceTree = "<group>"; };
-		CF85A02F2A9B77DD00D9D73B /* UIView+SnapKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+SnapKit.swift"; sourceTree = "<group>"; };
-		CF85A0322A9B7E8400D9D73B /* DayForecastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayForecastView.swift; sourceTree = "<group>"; };
-		CF85A0342A9B8AC400D9D73B /* DayRemote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayRemote.swift; sourceTree = "<group>"; };
-		CF85A0392A9B8E8F00D9D73B /* ConditionList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConditionList.swift; sourceTree = "<group>"; };
-		CF85A03B2A9B905F00D9D73B /* Stylable+UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Stylable+UIImageView.swift"; sourceTree = "<group>"; };
-		CF85A0432A9BB92900D9D73B /* DateFormatter+Current.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+Current.swift"; sourceTree = "<group>"; };
-		CF85A0472A9BB9A700D9D73B /* Date+Text.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Text.swift"; sourceTree = "<group>"; };
 		CF85A04A2A9BD36A00D9D73B /* day_clearSky.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = day_clearSky.json; sourceTree = "<group>"; };
 		CF85A04B2A9BD36A00D9D73B /* night_mist.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = night_mist.json; sourceTree = "<group>"; };
 		CF85A04C2A9BD36A00D9D73B /* day_snow.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = day_snow.json; sourceTree = "<group>"; };
@@ -172,19 +60,11 @@
 		CF85A0592A9BD36B00D9D73B /* night_rain.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = night_rain.json; sourceTree = "<group>"; };
 		CF85A05A2A9BD36B00D9D73B /* day_thunderstorm.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = day_thunderstorm.json; sourceTree = "<group>"; };
 		CF85A05B2A9BD36B00D9D73B /* day_rain.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = day_rain.json; sourceTree = "<group>"; };
-		CF85A0702A9BE11100D9D73B /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
-		CF85A0722A9BEA0C00D9D73B /* Stylable+UISearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Stylable+UISearchBar.swift"; sourceTree = "<group>"; };
-		CF85A07C2A9C018000D9D73B /* RealmService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmService.swift; sourceTree = "<group>"; };
-		CF85A07F2A9C02C600D9D73B /* WeatherRealm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherRealm.swift; sourceTree = "<group>"; };
-		CF85A0812A9C02CB00D9D73B /* DayRealm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayRealm.swift; sourceTree = "<group>"; };
-		CF85A0832A9C133800D9D73B /* UIViewController+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alert.swift"; sourceTree = "<group>"; };
-		CF85A0852A9C138300D9D73B /* UIAlertController+Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Error.swift"; sourceTree = "<group>"; };
-		CF85A0892A9C169300D9D73B /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
-		CF85A08B2A9C169900D9D73B /* Texts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Texts.swift; sourceTree = "<group>"; };
 		CF85A0902A9C194E00D9D73B /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
-		CF85A0922A9C196000D9D73B /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
-		CF85A0942A9C196B00D9D73B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		CF85A0952A9C224C00D9D73B /* Double+Fahrenheit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Fahrenheit.swift"; sourceTree = "<group>"; };
+		CF85A0972A9C287600D9D73B /* Network */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Network; sourceTree = "<group>"; };
+		CF85A0982A9C290400D9D73B /* Core */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Core; sourceTree = "<group>"; };
+		CF85A0992A9C295000D9D73B /* Design */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Design; sourceTree = "<group>"; };
+		CF85A0A12A9C29D900D9D73B /* Forecast */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Forecast; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -192,10 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CF85A07B2A9C00CE00D9D73B /* RealmSwift in Frameworks */,
-				CF85A0792A9C00CE00D9D73B /* Realm in Frameworks */,
-				CF1039082A99FAEC004E4A91 /* Lottie in Frameworks */,
-				CF1039482A9B4F3D004E4A91 /* SnapKit in Frameworks */,
+				CFBB007F2A9C32880085540E /* Forecast in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,30 +82,21 @@
 		CF1038DE2A99EF3A004E4A91 = {
 			isa = PBXGroup;
 			children = (
+				CF85A0A12A9C29D900D9D73B /* Forecast */,
+				CF85A0992A9C295000D9D73B /* Design */,
+				CF85A0982A9C290400D9D73B /* Core */,
+				CF85A0972A9C287600D9D73B /* Network */,
 				CF1038E92A99EF3A004E4A91 /* Zeus */,
-				CF1038E82A99EF3A004E4A91 /* Products */,
 			);
-			sourceTree = "<group>";
-		};
-		CF1038E82A99EF3A004E4A91 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				CF1038E72A99EF3A004E4A91 /* Zeus.app */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		CF1038E92A99EF3A004E4A91 /* Zeus */ = {
 			isa = PBXGroup;
 			children = (
-				CF1039122A99FDBC004E4A91 /* Network */,
-				CF1039112A99FD9A004E4A91 /* Design */,
-				CF1039102A99FD79004E4A91 /* Core */,
-				CF10390B2A99FC84004E4A91 /* Features */,
 				CF1039092A99FB8F004E4A91 /* Supporting Files */,
 				CF10390A2A99FC44004E4A91 /* Resources */,
 				CF1038FB2A99EF3C004E4A91 /* Info.plist */,
-				CF1039292A99FF3E004E4A91 /* OWConfig.xcconfig */,
+				CF1039292A99FF3E004E4A91 /* Config.xcconfig */,
 			);
 			path = Zeus;
 			sourceTree = "<group>";
@@ -251,229 +119,6 @@
 				CF1038F62A99EF3C004E4A91 /* Assets.xcassets */,
 			);
 			path = Resources;
-			sourceTree = "<group>";
-		};
-		CF10390B2A99FC84004E4A91 /* Features */ = {
-			isa = PBXGroup;
-			children = (
-				CF10390C2A99FCC3004E4A91 /* Forecast */,
-			);
-			path = Features;
-			sourceTree = "<group>";
-		};
-		CF10390C2A99FCC3004E4A91 /* Forecast */ = {
-			isa = PBXGroup;
-			children = (
-				CF85A0452A9BB98E00D9D73B /* Other */,
-				CF10390F2A99FCF9004E4A91 /* Presenter */,
-				CF10390E2A99FCF1004E4A91 /* Model */,
-				CF10390D2A99FCEA004E4A91 /* View */,
-			);
-			path = Forecast;
-			sourceTree = "<group>";
-		};
-		CF10390D2A99FCEA004E4A91 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				CF85A0312A9B7E5800D9D73B /* Components */,
-				CF85A01D2A9B753100D9D73B /* ForecastView.swift */,
-				CF1038EE2A99EF3A004E4A91 /* ForecastViewController.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		CF10390E2A99FCF1004E4A91 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				CF85A07E2A9C02B800D9D73B /* Realm */,
-				CF85A0012A9B525700D9D73B /* Domain */,
-				CF85A0002A9B522E00D9D73B /* Remote */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		CF10390F2A99FCF9004E4A91 /* Presenter */ = {
-			isa = PBXGroup;
-			children = (
-				CF85A0142A9B697100D9D73B /* ForecastPresenter.swift */,
-			);
-			path = Presenter;
-			sourceTree = "<group>";
-		};
-		CF1039102A99FD79004E4A91 /* Core */ = {
-			isa = PBXGroup;
-			children = (
-				CF1039162A99FDF0004E4A91 /* Navigation */,
-				CF1039152A99FDE1004E4A91 /* Utils */,
-				CF1039142A99FDD9004E4A91 /* DI */,
-			);
-			path = Core;
-			sourceTree = "<group>";
-		};
-		CF1039112A99FD9A004E4A91 /* Design */ = {
-			isa = PBXGroup;
-			children = (
-				CF85A02E2A9B77D200D9D73B /* Extensions */,
-				CF85A01F2A9B75F700D9D73B /* Styler */,
-				CF85A0182A9B747600D9D73B /* Base */,
-			);
-			path = Design;
-			sourceTree = "<group>";
-		};
-		CF1039122A99FDBC004E4A91 /* Network */ = {
-			isa = PBXGroup;
-			children = (
-				CF10391B2A99FEDA004E4A91 /* Network.swift */,
-				CF10392A2A9A0192004E4A91 /* Network+Logger.swift */,
-				CF10391D2A99FEE0004E4A91 /* Networking.swift */,
-				CF10391F2A99FEE9004E4A91 /* NetworkError.swift */,
-				CF1039212A99FEF8004E4A91 /* NetworkRequest.swift */,
-				CF1039232A99FF00004E4A91 /* NetworkStatus.swift */,
-				CF1039252A99FF0B004E4A91 /* RequestBody.swift */,
-				CF1039272A99FF11004E4A91 /* RequestMethod.swift */,
-				CF10392C2A9A02EF004E4A91 /* Data+PrettyJSON.swift */,
-			);
-			path = Network;
-			sourceTree = "<group>";
-		};
-		CF1039142A99FDD9004E4A91 /* DI */ = {
-			isa = PBXGroup;
-			children = (
-				CF10392F2A9B4C25004E4A91 /* DIContainer.swift */,
-				CF1039312A9B4C2A004E4A91 /* Injected.swift */,
-				CF1039332A9B4C2F004E4A91 /* Scope.swift */,
-			);
-			path = DI;
-			sourceTree = "<group>";
-		};
-		CF1039152A99FDE1004E4A91 /* Utils */ = {
-			isa = PBXGroup;
-			children = (
-				CF1039172A99FE91004E4A91 /* Environment.swift */,
-				CF1039192A99FEA8004E4A91 /* Typealiases.swift */,
-				CF85A0432A9BB92900D9D73B /* DateFormatter+Current.swift */,
-			);
-			path = Utils;
-			sourceTree = "<group>";
-		};
-		CF1039162A99FDF0004E4A91 /* Navigation */ = {
-			isa = PBXGroup;
-			children = (
-				CF1039352A9B4C61004E4A91 /* BaseCoordinator.swift */,
-				CF1039372A9B4C68004E4A91 /* Coordinator.swift */,
-				CF1039392A9B4C7A004E4A91 /* Routable.swift */,
-				CF10393B2A9B4C7F004E4A91 /* Router.swift */,
-			);
-			path = Navigation;
-			sourceTree = "<group>";
-		};
-		CF10392E2A9B4C06004E4A91 /* Services */ = {
-			isa = PBXGroup;
-			children = (
-				CF10393F2A9B4D14004E4A91 /* ForecastCoordinator.swift */,
-				CF1039412A9B4DF2004E4A91 /* ForecastRepository.swift */,
-				CF1039442A9B4E15004E4A91 /* ForecastRequest.swift */,
-				CF85A0702A9BE11100D9D73B /* LocationService.swift */,
-				CF85A07C2A9C018000D9D73B /* RealmService.swift */,
-			);
-			path = Services;
-			sourceTree = "<group>";
-		};
-		CF85A0002A9B522E00D9D73B /* Remote */ = {
-			isa = PBXGroup;
-			children = (
-				CF85A0022A9B528F00D9D73B /* WeatherResponse.swift */,
-				CF85A0042A9B52E100D9D73B /* LocationRemote.swift */,
-				CF85A0062A9B52F600D9D73B /* CurrentRemote.swift */,
-				CF85A0082A9B530900D9D73B /* ConditionRemote.swift */,
-				CF85A00A2A9B540900D9D73B /* ForecastRemote.swift */,
-				CF85A0122A9B5F8100D9D73B /* ForecastdayRemote.swift */,
-				CF85A0342A9B8AC400D9D73B /* DayRemote.swift */,
-			);
-			path = Remote;
-			sourceTree = "<group>";
-		};
-		CF85A0012A9B525700D9D73B /* Domain */ = {
-			isa = PBXGroup;
-			children = (
-				CF85A00C2A9B554200D9D73B /* Weather.swift */,
-				CF85A00E2A9B554900D9D73B /* Day.swift */,
-				CF85A0102A9B559900D9D73B /* WeatherMapper.swift */,
-			);
-			path = Domain;
-			sourceTree = "<group>";
-		};
-		CF85A0182A9B747600D9D73B /* Base */ = {
-			isa = PBXGroup;
-			children = (
-				CF85A0192A9B748A00D9D73B /* BaseView.swift */,
-				CF85A01B2A9B749100D9D73B /* BaseViewController.swift */,
-			);
-			path = Base;
-			sourceTree = "<group>";
-		};
-		CF85A01F2A9B75F700D9D73B /* Styler */ = {
-			isa = PBXGroup;
-			children = (
-				CF85A0202A9B760200D9D73B /* Stylable.swift */,
-				CF85A02A2A9B763E00D9D73B /* Stylable+UIStackView.swift */,
-				CF85A02C2A9B764B00D9D73B /* Stylable+UITextField.swift */,
-				CF85A0722A9BEA0C00D9D73B /* Stylable+UISearchBar.swift */,
-				CF85A0222A9B760E00D9D73B /* Stylable+UIButton.swift */,
-				CF85A0242A9B761500D9D73B /* Stylable+UIView.swift */,
-				CF85A0262A9B761E00D9D73B /* Stylable+UIControl.swift */,
-				CF85A0282A9B762600D9D73B /* Stylable+UILabel.swift */,
-				CF85A03B2A9B905F00D9D73B /* Stylable+UIImageView.swift */,
-			);
-			path = Styler;
-			sourceTree = "<group>";
-		};
-		CF85A02E2A9B77D200D9D73B /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				CF85A02F2A9B77DD00D9D73B /* UIView+SnapKit.swift */,
-				CF85A0832A9C133800D9D73B /* UIViewController+Alert.swift */,
-				CF85A0852A9C138300D9D73B /* UIAlertController+Error.swift */,
-			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
-		CF85A0312A9B7E5800D9D73B /* Components */ = {
-			isa = PBXGroup;
-			children = (
-				CF85A0322A9B7E8400D9D73B /* DayForecastView.swift */,
-			);
-			path = Components;
-			sourceTree = "<group>";
-		};
-		CF85A0382A9B8E8400D9D73B /* Constants */ = {
-			isa = PBXGroup;
-			children = (
-				CF85A0392A9B8E8F00D9D73B /* ConditionList.swift */,
-				CF85A0892A9C169300D9D73B /* Colors.swift */,
-				CF85A08B2A9C169900D9D73B /* Texts.swift */,
-			);
-			path = Constants;
-			sourceTree = "<group>";
-		};
-		CF85A0452A9BB98E00D9D73B /* Other */ = {
-			isa = PBXGroup;
-			children = (
-				CF85A08D2A9C191A00D9D73B /* Localization */,
-				CF85A0462A9BB99A00D9D73B /* Extensions */,
-				CF85A0382A9B8E8400D9D73B /* Constants */,
-				CF10392E2A9B4C06004E4A91 /* Services */,
-			);
-			path = Other;
-			sourceTree = "<group>";
-		};
-		CF85A0462A9BB99A00D9D73B /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				CF85A0472A9BB9A700D9D73B /* Date+Text.swift */,
-				CF85A0952A9C224C00D9D73B /* Double+Fahrenheit.swift */,
-			);
-			path = Extensions;
 			sourceTree = "<group>";
 		};
 		CF85A0492A9BD34400D9D73B /* Animations */ = {
@@ -501,23 +146,6 @@
 			path = Animations;
 			sourceTree = "<group>";
 		};
-		CF85A07E2A9C02B800D9D73B /* Realm */ = {
-			isa = PBXGroup;
-			children = (
-				CF85A07F2A9C02C600D9D73B /* WeatherRealm.swift */,
-				CF85A0812A9C02CB00D9D73B /* DayRealm.swift */,
-			);
-			path = Realm;
-			sourceTree = "<group>";
-		};
-		CF85A08D2A9C191A00D9D73B /* Localization */ = {
-			isa = PBXGroup;
-			children = (
-				CF85A0932A9C196000D9D73B /* Localizable.strings */,
-			);
-			path = Localization;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -535,10 +163,7 @@
 			);
 			name = Zeus;
 			packageProductDependencies = (
-				CF1039072A99FAEC004E4A91 /* Lottie */,
-				CF1039472A9B4F3D004E4A91 /* SnapKit */,
-				CF85A0782A9C00CE00D9D73B /* Realm */,
-				CF85A07A2A9C00CE00D9D73B /* RealmSwift */,
+				CFBB007E2A9C32880085540E /* Forecast */,
 			);
 			productName = Zeus;
 			productReference = CF1038E72A99EF3A004E4A91 /* Zeus.app */;
@@ -571,10 +196,9 @@
 			mainGroup = CF1038DE2A99EF3A004E4A91;
 			packageReferences = (
 				CF1039062A99FAEC004E4A91 /* XCRemoteSwiftPackageReference "lottie-spm" */,
-				CF1039462A9B4F3D004E4A91 /* XCRemoteSwiftPackageReference "SnapKit" */,
 				CF85A0772A9C00CD00D9D73B /* XCRemoteSwiftPackageReference "realm-swift" */,
 			);
-			productRefGroup = CF1038E82A99EF3A004E4A91 /* Products */;
+			productRefGroup = CF1038DE2A99EF3A004E4A91;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -598,7 +222,6 @@
 				CF1038FA2A99EF3C004E4A91 /* LaunchScreen.storyboard in Resources */,
 				CF85A0612A9BD36B00D9D73B /* night_scatteredClouds.json in Resources */,
 				CF85A05F2A9BD36B00D9D73B /* night_showerRains.json in Resources */,
-				CF85A0912A9C196000D9D73B /* Localizable.strings in Resources */,
 				CF1038F72A99EF3C004E4A91 /* Assets.xcassets in Resources */,
 				CF85A05E2A9BD36B00D9D73B /* day_snow.json in Resources */,
 				CF85A0662A9BD36B00D9D73B /* night_fewClouds.json in Resources */,
@@ -619,68 +242,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CF10393C2A9B4C7F004E4A91 /* Router.swift in Sources */,
-				CF85A0332A9B7E8400D9D73B /* DayForecastView.swift in Sources */,
-				CF85A0352A9B8AC400D9D73B /* DayRemote.swift in Sources */,
-				CF10392D2A9A02EF004E4A91 /* Data+PrettyJSON.swift in Sources */,
-				CF1039422A9B4DF2004E4A91 /* ForecastRepository.swift in Sources */,
-				CF10393A2A9B4C7A004E4A91 /* Routable.swift in Sources */,
-				CF1039282A99FF11004E4A91 /* RequestMethod.swift in Sources */,
-				CF85A00B2A9B540900D9D73B /* ForecastRemote.swift in Sources */,
-				CF85A08C2A9C169900D9D73B /* Texts.swift in Sources */,
-				CF85A0862A9C138300D9D73B /* UIAlertController+Error.swift in Sources */,
-				CF1039322A9B4C2A004E4A91 /* Injected.swift in Sources */,
-				CF85A0032A9B528F00D9D73B /* WeatherResponse.swift in Sources */,
-				CF85A0822A9C02CB00D9D73B /* DayRealm.swift in Sources */,
 				CF10393E2A9B4CD6004E4A91 /* AppCoordinator.swift in Sources */,
-				CF85A0092A9B530900D9D73B /* ConditionRemote.swift in Sources */,
-				CF85A03A2A9B8E8F00D9D73B /* ConditionList.swift in Sources */,
-				CF1038EF2A99EF3A004E4A91 /* ForecastViewController.swift in Sources */,
-				CF85A0302A9B77DD00D9D73B /* UIView+SnapKit.swift in Sources */,
-				CF10391A2A99FEA8004E4A91 /* Typealiases.swift in Sources */,
-				CF10391E2A99FEE0004E4A91 /* Networking.swift in Sources */,
-				CF1039242A99FF00004E4A91 /* NetworkStatus.swift in Sources */,
-				CF1039222A99FEF8004E4A91 /* NetworkRequest.swift in Sources */,
-				CF85A0272A9B761E00D9D73B /* Stylable+UIControl.swift in Sources */,
 				CF1038EB2A99EF3A004E4A91 /* AppDelegate.swift in Sources */,
-				CF85A0152A9B697100D9D73B /* ForecastPresenter.swift in Sources */,
-				CF85A0802A9C02C600D9D73B /* WeatherRealm.swift in Sources */,
-				CF85A0212A9B760200D9D73B /* Stylable.swift in Sources */,
-				CF85A02D2A9B764B00D9D73B /* Stylable+UITextField.swift in Sources */,
-				CF85A00F2A9B554900D9D73B /* Day.swift in Sources */,
-				CF85A0712A9BE11100D9D73B /* LocationService.swift in Sources */,
-				CF10392B2A9A0192004E4A91 /* Network+Logger.swift in Sources */,
 				CF1038ED2A99EF3A004E4A91 /* SceneDelegate.swift in Sources */,
-				CF85A0252A9B761500D9D73B /* Stylable+UIView.swift in Sources */,
-				CF1039402A9B4D14004E4A91 /* ForecastCoordinator.swift in Sources */,
-				CF1039382A9B4C68004E4A91 /* Coordinator.swift in Sources */,
-				CF85A03C2A9B905F00D9D73B /* Stylable+UIImageView.swift in Sources */,
-				CF85A0232A9B760E00D9D73B /* Stylable+UIButton.swift in Sources */,
-				CF85A0112A9B559900D9D73B /* WeatherMapper.swift in Sources */,
-				CF85A07D2A9C018000D9D73B /* RealmService.swift in Sources */,
-				CF85A0442A9BB92900D9D73B /* DateFormatter+Current.swift in Sources */,
-				CF1039202A99FEE9004E4A91 /* NetworkError.swift in Sources */,
-				CF85A01C2A9B749100D9D73B /* BaseViewController.swift in Sources */,
-				CF85A08A2A9C169300D9D73B /* Colors.swift in Sources */,
-				CF1039302A9B4C25004E4A91 /* DIContainer.swift in Sources */,
-				CF10391C2A99FEDA004E4A91 /* Network.swift in Sources */,
-				CF85A0132A9B5F8100D9D73B /* ForecastdayRemote.swift in Sources */,
-				CF1039362A9B4C61004E4A91 /* BaseCoordinator.swift in Sources */,
-				CF85A02B2A9B763E00D9D73B /* Stylable+UIStackView.swift in Sources */,
-				CF85A01E2A9B753100D9D73B /* ForecastView.swift in Sources */,
-				CF85A0732A9BEA0C00D9D73B /* Stylable+UISearchBar.swift in Sources */,
-				CF85A0072A9B52F600D9D73B /* CurrentRemote.swift in Sources */,
-				CF1039182A99FE92004E4A91 /* Environment.swift in Sources */,
-				CF85A0962A9C224C00D9D73B /* Double+Fahrenheit.swift in Sources */,
-				CF85A0842A9C133800D9D73B /* UIViewController+Alert.swift in Sources */,
-				CF85A0292A9B762600D9D73B /* Stylable+UILabel.swift in Sources */,
-				CF85A0052A9B52E100D9D73B /* LocationRemote.swift in Sources */,
-				CF1039342A9B4C2F004E4A91 /* Scope.swift in Sources */,
-				CF1039452A9B4E15004E4A91 /* ForecastRequest.swift in Sources */,
-				CF85A0482A9BB9A700D9D73B /* Date+Text.swift in Sources */,
-				CF85A01A2A9B748A00D9D73B /* BaseView.swift in Sources */,
-				CF85A00D2A9B554200D9D73B /* Weather.swift in Sources */,
-				CF1039262A99FF0B004E4A91 /* RequestBody.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -696,21 +260,12 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
-		CF85A0932A9C196000D9D73B /* Localizable.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CF85A0922A9C196000D9D73B /* ru */,
-				CF85A0942A9C196B00D9D73B /* en */,
-			);
-			name = Localizable.strings;
-			sourceTree = "<group>";
-		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		CF1038FC2A99EF3C004E4A91 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CF1039292A99FF3E004E4A91 /* OWConfig.xcconfig */;
+			baseConfigurationReference = CF1039292A99FF3E004E4A91 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
@@ -772,7 +327,7 @@
 		};
 		CF1038FD2A99EF3C004E4A91 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CF1039292A99FF3E004E4A91 /* OWConfig.xcconfig */;
+			baseConfigurationReference = CF1039292A99FF3E004E4A91 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
@@ -828,7 +383,7 @@
 		};
 		CF1038FF2A99EF3C004E4A91 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CF1039292A99FF3E004E4A91 /* OWConfig.xcconfig */;
+			baseConfigurationReference = CF1039292A99FF3E004E4A91 /* Config.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -856,7 +411,7 @@
 		};
 		CF1039002A99EF3C004E4A91 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CF1039292A99FF3E004E4A91 /* OWConfig.xcconfig */;
+			baseConfigurationReference = CF1039292A99FF3E004E4A91 /* Config.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -914,14 +469,6 @@
 				minimumVersion = 4.0.0;
 			};
 		};
-		CF1039462A9B4F3D004E4A91 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.0.0;
-			};
-		};
 		CF85A0772A9C00CD00D9D73B /* XCRemoteSwiftPackageReference "realm-swift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/realm/realm-swift.git";
@@ -933,25 +480,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		CF1039072A99FAEC004E4A91 /* Lottie */ = {
+		CFBB007E2A9C32880085540E /* Forecast */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = CF1039062A99FAEC004E4A91 /* XCRemoteSwiftPackageReference "lottie-spm" */;
-			productName = Lottie;
-		};
-		CF1039472A9B4F3D004E4A91 /* SnapKit */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = CF1039462A9B4F3D004E4A91 /* XCRemoteSwiftPackageReference "SnapKit" */;
-			productName = SnapKit;
-		};
-		CF85A0782A9C00CE00D9D73B /* Realm */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = CF85A0772A9C00CD00D9D73B /* XCRemoteSwiftPackageReference "realm-swift" */;
-			productName = Realm;
-		};
-		CF85A07A2A9C00CE00D9D73B /* RealmSwift */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = CF85A0772A9C00CD00D9D73B /* XCRemoteSwiftPackageReference "realm-swift" */;
-			productName = RealmSwift;
+			productName = Forecast;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

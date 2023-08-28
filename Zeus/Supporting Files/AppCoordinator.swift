@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import Core
+import Forecast
 
 final class AppCoordinator: BaseCoordinator {
      
