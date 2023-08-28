@@ -13,20 +13,24 @@ final class ForecastView: BaseView {
     private lazy var todayLabel = UILabel()
         .numberOfLines(2)
         .textAlignment(.center)
-    private lazy var tempLabel = UILabel()
-        .font(.monospacedSystemFont(ofSize: 250, weight: .bold))
-        .textColor(.metalGray.withAlphaComponent(0.95))
+    
     private lazy var stackView = UIStackView()
         .axis(.vertical)
         .spacing(10)
+    
+    private(set) lazy var tempLabel = UILabel()
+        .font(.monospacedSystemFont(ofSize: 250, weight: .bold))
+        .textColor(.metalBlack.withAlphaComponent(1))
+    
+    private(set) lazy var searchBar = UISearchBar()
+        .placeholder(Texts.Forecast.searchPlaceholder)
+    
     private lazy var animationView: LottieAnimationView = {
         let view = LottieAnimationView()
         view.contentMode(.scaleAspectFit)
         view.loopMode = .loop
         return view
     }()
-    private(set) lazy var searchBar = UISearchBar()
-        .placeholder(Texts.Forecast.searchPlaceholder)
     
     // MARK: - Lifecycle
     override init(frame: CGRect) {
@@ -85,11 +89,11 @@ extension ForecastView {
     
     private func makeAttributedText(from city: String, date: Date) -> NSMutableAttributedString {
         let cityAttrString = NSAttributedString(string: city.uppercased(),
-                                                attributes: [.foregroundColor: UIColor.darkGray])
+                                                attributes: [.foregroundColor: UIColor.berlin])
         let finalString = NSMutableAttributedString(attributedString: cityAttrString)
         
         let dateAttrString = NSAttributedString(string: "\n\(date.toWeekdayAndTime)",
-                                                attributes: [.foregroundColor: UIColor.gray])
+                                                attributes: [.foregroundColor: UIColor.monday])
         finalString.append(dateAttrString)
         return finalString
     }

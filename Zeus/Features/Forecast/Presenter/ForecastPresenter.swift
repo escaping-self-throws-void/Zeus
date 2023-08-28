@@ -20,6 +20,8 @@ final class ForecastPresenter {
     private var task: Task<Void, Never>?
     
     private weak var view: ForecastPresenterView?
+    private var latestFetched: Weather?
+    private var isCelsius = true
     
     required init(view: ForecastPresenterView) {
         self.view = view
@@ -37,6 +39,7 @@ extension ForecastPresenter {
         Task {
             do {
                 let weather = try await forecastRepository.fetchWeather(with: query)
+                latestFetched = weather
                 view?.onSuccess(content: weather)
             } catch {
                 view?.onFailure(errorMessage: handle(error: error))
@@ -45,10 +48,38 @@ extension ForecastPresenter {
     }
     
     public func getSavedForecast() {
-        guard let result = forecastRepository.fetchSavedWeather() else {
+        guard let weather = forecastRepository.fetchSavedWeather() else {
             return
         }
-        view?.onSuccess(content: result)
+        latestFetched = weather
+        view?.onSuccess(content: weather)
+    }
+    
+    public func reload() {
+        guard let latestFetched else {
+            return
+        }
+        
+        isCelsius.toggle()
+        let content: Weather
+        
+        if isCelsius {
+            content = latestFetched
+        } else {
+            content = Weather(
+                animation: latestFetched.animation,
+                city: latestFetched.city,
+                date: latestFetched.date,
+                temp: latestFetched.temp.celsiusToFahrenheit,
+                forecast: latestFetched.forecast.map { day in
+                    Day(date: day.date,
+                        icon: day.icon,
+                        minTemp: day.minTemp.celsiusToFahrenheit,
+                        maxTemp: day.maxTemp.celsiusToFahrenheit)
+                }
+            )
+        }
+        view?.onSuccess(content: content)
     }
 }
 

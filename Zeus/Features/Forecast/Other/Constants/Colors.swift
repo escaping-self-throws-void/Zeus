@@ -12,7 +12,19 @@ public extension UIColor {
         .init(named: "metalGray") ?? .gray
     }
     
-    class var metalTeal: UIColor {
-        .init(named: "metalTeal") ?? .systemTeal
+    class var metalBlack: UIColor {
+        .init(named: "metalBlack") ?? .black
+    }
+    
+    class var berlin: UIColor {
+        .init(named: "berlin") ?? .darkGray
+    }
+    
+    class var monday: UIColor {
+        .init(named: "monday") ?? .gray
+    }
+    
+    class var bg: UIColor {
+        .init(named: "bg") ?? .gray
     }
 }

@@ -90,10 +90,10 @@
 		CF85A0822A9C02CB00D9D73B /* DayRealm.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF85A0812A9C02CB00D9D73B /* DayRealm.swift */; };
 		CF85A0842A9C133800D9D73B /* UIViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF85A0832A9C133800D9D73B /* UIViewController+Alert.swift */; };
 		CF85A0862A9C138300D9D73B /* UIAlertController+Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF85A0852A9C138300D9D73B /* UIAlertController+Error.swift */; };
-		CF85A0882A9C168D00D9D73B /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF85A0872A9C168D00D9D73B /* Images.swift */; };
 		CF85A08A2A9C169300D9D73B /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF85A0892A9C169300D9D73B /* Colors.swift */; };
 		CF85A08C2A9C169900D9D73B /* Texts.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF85A08B2A9C169900D9D73B /* Texts.swift */; };
 		CF85A0912A9C196000D9D73B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CF85A0932A9C196000D9D73B /* Localizable.strings */; };
+		CF85A0962A9C224C00D9D73B /* Double+Fahrenheit.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF85A0952A9C224C00D9D73B /* Double+Fahrenheit.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -179,12 +179,12 @@
 		CF85A0812A9C02CB00D9D73B /* DayRealm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayRealm.swift; sourceTree = "<group>"; };
 		CF85A0832A9C133800D9D73B /* UIViewController+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alert.swift"; sourceTree = "<group>"; };
 		CF85A0852A9C138300D9D73B /* UIAlertController+Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Error.swift"; sourceTree = "<group>"; };
-		CF85A0872A9C168D00D9D73B /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
 		CF85A0892A9C169300D9D73B /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		CF85A08B2A9C169900D9D73B /* Texts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Texts.swift; sourceTree = "<group>"; };
 		CF85A0902A9C194E00D9D73B /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		CF85A0922A9C196000D9D73B /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 		CF85A0942A9C196B00D9D73B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		CF85A0952A9C224C00D9D73B /* Double+Fahrenheit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Fahrenheit.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -450,7 +450,6 @@
 			isa = PBXGroup;
 			children = (
 				CF85A0392A9B8E8F00D9D73B /* ConditionList.swift */,
-				CF85A0872A9C168D00D9D73B /* Images.swift */,
 				CF85A0892A9C169300D9D73B /* Colors.swift */,
 				CF85A08B2A9C169900D9D73B /* Texts.swift */,
 			);
@@ -472,6 +471,7 @@
 			isa = PBXGroup;
 			children = (
 				CF85A0472A9BB9A700D9D73B /* Date+Text.swift */,
+				CF85A0952A9C224C00D9D73B /* Double+Fahrenheit.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -657,7 +657,6 @@
 				CF85A03C2A9B905F00D9D73B /* Stylable+UIImageView.swift in Sources */,
 				CF85A0232A9B760E00D9D73B /* Stylable+UIButton.swift in Sources */,
 				CF85A0112A9B559900D9D73B /* WeatherMapper.swift in Sources */,
-				CF85A0882A9C168D00D9D73B /* Images.swift in Sources */,
 				CF85A07D2A9C018000D9D73B /* RealmService.swift in Sources */,
 				CF85A0442A9BB92900D9D73B /* DateFormatter+Current.swift in Sources */,
 				CF1039202A99FEE9004E4A91 /* NetworkError.swift in Sources */,
@@ -672,6 +671,7 @@
 				CF85A0732A9BEA0C00D9D73B /* Stylable+UISearchBar.swift in Sources */,
 				CF85A0072A9B52F600D9D73B /* CurrentRemote.swift in Sources */,
 				CF1039182A99FE92004E4A91 /* Environment.swift in Sources */,
+				CF85A0962A9C224C00D9D73B /* Double+Fahrenheit.swift in Sources */,
 				CF85A0842A9C133800D9D73B /* UIViewController+Alert.swift in Sources */,
 				CF85A0292A9B762600D9D73B /* Stylable+UILabel.swift in Sources */,
 				CF85A0052A9B52E100D9D73B /* LocationRemote.swift in Sources */,

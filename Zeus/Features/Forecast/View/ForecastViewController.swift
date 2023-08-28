@@ -18,7 +18,6 @@ final class ForecastViewController: BaseViewController<ForecastView> {
         super.viewDidLoad()
         configureSubviews()
         configureNavigationBar()
-        dismissKeyboardOnTap()
         presenter.getSavedForecast()
     }
 }
@@ -26,19 +25,28 @@ final class ForecastViewController: BaseViewController<ForecastView> {
 // MARK: - Private methods
 extension ForecastViewController {
     private func configureSubviews() {
-        view.backgroundColor = .darkGray
+        view.backgroundColor = .bg
+        let dismissGesture = UITapGestureRecognizer(target: self, action: #selector(hideKeyboard))
+        dismissGesture.cancelsTouchesInView = false
+        view.addGestureRecognizer(dismissGesture)
+        
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(tempTapped))
+        customView.tempLabel.isUserInteractionEnabled = true
+        customView.tempLabel.addGestureRecognizer(tapGesture)
         customView.searchBar.delegate = self
+        
+        locationService.onError = { [weak self] errorMessage in
+            self?.showAlert(title: Texts.Errors.errorTitle, message: errorMessage)
+        }
         locationService.onSuccess = { [weak self] location in
             let lat = location.coordinate.latitude
             let lon = location.coordinate.longitude
             self?.presenter.getForecast(with: "\(lat),\(lon)")
         }
-        locationService.onError = { [weak self] errorMessage in
-            self?.showAlert(title: Texts.Errors.errorTitle, message: errorMessage)
-        }
     }
     
     private func configureNavigationBar() {
+        navigationController?.navigationBar.tintColor = .berlin
         navigationItem.titleView = customView.searchBar
         navigationItem.leftBarButtonItem = UIBarButtonItem(image: .init(systemName: "location"),
                                                            style: .done,
@@ -47,13 +55,6 @@ extension ForecastViewController {
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .search,
                                                             target: self,
                                                             action: #selector(searchTapped))
-    }
-    
-    private func dismissKeyboardOnTap() {
-        let tapGesture = UITapGestureRecognizer(target: self,
-                                                action: #selector(hideKeyboard))
-        tapGesture.cancelsTouchesInView = false
-        view.addGestureRecognizer(tapGesture)
     }
 }
 
@@ -77,6 +78,11 @@ extension ForecastViewController {
     @objc
     private func hideKeyboard() {
         customView.searchBar.resignFirstResponder()
+    }
+    
+    @objc
+    private func tempTapped() {
+        presenter.reload()
     }
 }
 

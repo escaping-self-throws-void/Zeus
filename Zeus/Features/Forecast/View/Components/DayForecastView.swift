@@ -10,9 +10,11 @@ import UIKit
 final class DayForecastView: BaseView {
     // MARK: - Outlets
     private let dateLabel = UILabel()
+        .textColor(.berlin)
     private let iconView = UIImageView()
         .contentMode(.scaleToFill)
     private let tempLabel = UILabel()
+        .textColor(.berlin)
 
     // MARK: - Lifecycle
     override init(frame: CGRect) {
