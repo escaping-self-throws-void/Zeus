@@ -58,6 +58,18 @@ extension ForecastViewController {
                                                             target: self,
                                                             action: #selector(searchTapped))
     }
+    
+    private func isLoading(_ loading: Bool) {
+        hideKeyboard()
+        navigationItem.leftBarButtonItem?.isEnabled = !loading
+        navigationItem.rightBarButtonItem?.isEnabled = !loading
+        customView.searchBar.searchTextField.isEnabled = !loading
+        customView.tempLabel.isUserInteractionEnabled = !loading
+        
+        loading
+        ? customView.activityIndicator.startAnimating()
+        : customView.activityIndicator.stopAnimating()
+    }
 }
 
 // MARK: - Actions
@@ -70,11 +82,13 @@ extension ForecastViewController {
             return
         }
         customView.searchBar.text = ""
+        isLoading(true)
         presenter.getForecast(with: text)
     }
     
     @objc
     private func locationTapped() {
+        isLoading(true)
         locationService.requestLocation()
     }
     
@@ -93,10 +107,12 @@ extension ForecastViewController {
 extension ForecastViewController: ForecastPresenterView {
     func onSuccess(content: Weather) {
         customView.configure(with: content)
+        isLoading(false)
     }
     
     func onFailure(errorMessage: String) {
         showAlert(title: Texts.Errors.errorTitle, message: errorMessage)
+        isLoading(false)
     }
 }
 
@@ -109,6 +125,7 @@ extension ForecastViewController: UISearchBarDelegate {
             return
         }
         searchBar.text = ""
+        isLoading(true)
         presenter.getForecast(with: text)
     }
 }

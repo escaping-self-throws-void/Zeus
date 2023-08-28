@@ -33,10 +33,24 @@ final class ForecastView: BaseView {
         return view
     }()
     
+    private(set) lazy var activityIndicator: UIActivityIndicatorView = {
+        let indicator = UIActivityIndicatorView(style: .large)
+        indicator.hidesWhenStopped = true
+        indicator.color = .systemOrange
+        let transform = CGAffineTransform(scaleX: 2, y: 2)
+        indicator.transform = transform
+        return indicator
+    }()
+    
     // MARK: - Lifecycle
     override init(frame: CGRect) {
         super.init(frame: frame)
         _init()
+    }
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        tempLabel.dropShadow()
     }
 }
 
@@ -62,9 +76,13 @@ extension ForecastView {
 // MARK: - Private methods
 extension ForecastView {
     private func _init() {
-        tempLabel.dropShadow()
-
-        addSubviews(animationView, todayLabel, tempLabel)
+        addSubviews(
+            animationView,
+            todayLabel,
+            tempLabel,
+            activityIndicator,
+            stackView
+        )
         
         animationView.snp.makeConstraints { make in
             make.center.equalToSuperview()
@@ -82,7 +100,10 @@ extension ForecastView {
             make.center.equalToSuperview()
         }
         
-        addSubview(stackView)
+        activityIndicator.snp.makeConstraints { make in
+            make.center.equalToSuperview()
+        }
+        
         stackView.snp.makeConstraints { make in
             make.centerX.equalToSuperview()
             make.top.greaterThanOrEqualTo(tempLabel.snp.bottom).inset(30)
