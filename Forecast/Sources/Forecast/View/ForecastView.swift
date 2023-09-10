@@ -62,11 +62,15 @@ final class ForecastView: BaseView {
 // MARK: - Configuration
 extension ForecastView {
     public func configure(with content: Weather) {
-        animationView.pause()
-        animationView.animation = .named(content.animation)
-        animationView.play()
         todayLabel.attributedText = makeAttributedText(from: content.city, date: content.date)
         tempLabel.text = "\(Int(content.temp))°"
+        
+        if let animation = LottieAnimation.named(content.animation),
+           animation !== animationView.animation {
+            animationView.pause()
+            animationView.animation = animation
+            animationView.play()
+        }
         
         stackView.arrangedSubviews.forEach { subview in
             stackView.removeArrangedSubview(subview)
