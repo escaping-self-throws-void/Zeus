@@ -13,10 +13,9 @@ public final class ForecastRepository {
     @Injected(.global)
     private var network: Networking
     @Injected(.global)
-    private var realmService: RealmService
+    private var storage: WeatherStorage
     @Injected
     private var mapper: WeatherMapper
-    
     private var latestFetched: Weather?
 }
 
@@ -28,13 +27,13 @@ extension ForecastRepository {
         let result = mapper.map(data)
         latestFetched = result
         await MainActor.run {
-            realmService.save(result)
+            storage.save(result)
         }
         return result
     }
     
     func fetchSavedWeather() -> Weather? {
-        let result = realmService.readAll()
+        let result = storage.fetch()
         latestFetched = result
         return result
     }

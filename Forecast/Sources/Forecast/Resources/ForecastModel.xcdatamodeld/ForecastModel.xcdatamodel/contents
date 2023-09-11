@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="21754" systemVersion="22G90" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="DayEntity" representedClassName="DayEntity" syncable="YES">
+        <attribute name="date" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="icon" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="maxTemp" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="minTemp" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <relationship name="weather" maxCount="1" deletionRule="Cascade" destinationEntity="WeatherEntity" inverseName="forecast" inverseEntity="WeatherEntity"/>
+    </entity>
+    <entity name="WeatherEntity" representedClassName="WeatherEntity" syncable="YES">
+        <attribute name="animation" attributeType="String"/>
+        <attribute name="city" attributeType="String"/>
+        <attribute name="date" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="temp" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <relationship name="forecast" toMany="YES" deletionRule="Cascade" destinationEntity="DayEntity" inverseName="weather" inverseEntity="DayEntity"/>
+    </entity>
+</model>

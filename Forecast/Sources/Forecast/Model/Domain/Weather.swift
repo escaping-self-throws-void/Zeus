@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Weather {
+public struct Weather {
     let animation: String
     let city: String
     let date: Date

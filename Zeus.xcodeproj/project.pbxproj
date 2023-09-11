@@ -230,7 +230,6 @@
 			mainGroup = CF1038DE2A99EF3A004E4A91;
 			packageReferences = (
 				CF1039062A99FAEC004E4A91 /* XCRemoteSwiftPackageReference "lottie-spm" */,
-				CF85A0772A9C00CD00D9D73B /* XCRemoteSwiftPackageReference "realm-swift" */,
 			);
 			productRefGroup = CF1038DE2A99EF3A004E4A91;
 			projectDirPath = "";
@@ -518,14 +517,6 @@
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 4.0.0;
-			};
-		};
-		CF85A0772A9C00CD00D9D73B /* XCRemoteSwiftPackageReference "realm-swift" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/realm/realm-swift.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 10.42.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */

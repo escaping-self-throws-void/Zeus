@@ -17,8 +17,7 @@ let package = Package(
         .package(path: "Network"),
         .package(path: "Core"),
         .package(path: "Design"),
-        .package(url: "https://github.com/airbnb/lottie-spm.git", from: "4.2.0"),
-        .package(url: "https://github.com/realm/realm-swift.git", .upToNextMajor(from: "10.42.0")),
+        .package(url: "https://github.com/airbnb/lottie-spm.git", from: "4.2.0")
     ],
     targets: [
         .target(
@@ -28,7 +27,6 @@ let package = Package(
                 .product(name: "Core", package: "Core"),
                 .product(name: "Design", package: "Design"),
                 .product(name: "Lottie", package: "lottie-spm"),
-                .product(name: "RealmSwift", package: "realm-swift"),
             ]
         ),
         .testTarget(
